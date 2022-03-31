@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "fa-nh-path",
+        "km": 0.006718
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.34125570790468, 16.04712303664799],
+          [120.34123827354716, 16.047159124387022],
+          [120.34122888603082, 16.047177651468786]
+        ]
+      }
+    }
+  ]
+}

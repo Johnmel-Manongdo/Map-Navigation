@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Display buildings in 3D</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .marker {
+        background-image: url("assets/img/campus.png");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .mapboxgl-popup {
+        max-width: 200px;
+      }
+
+      .mapboxgl-popup-content {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoic2hvamkteWFtYWRhIiwiYSI6ImNrdWd3M3Z3NDAxbWMyb3F0cGE5a3N0b2wifQ.u8mZVVWfCnxmT_6_FXzVzw";
+      const map = new mapboxgl.Map({
+        style: "mapbox://styles/mapbox/light-v10",
+        center: [120.34169210507243, 16.046967909993068],
+        zoom: 18,
+        pitch: 45,
+        bearing: -17.6,
+        container: "map",
+        antialias: true,
+      });
+
+      map.on("load", () => {
+        // Insert the layer beneath any symbol layer.
+        const layers = map.getStyle().layers;
+        const labelLayerId = layers.find(
+          (layer) => layer.type === "symbol" && layer.layout["text-field"]
+        ).id;
+
+        // The 'building' layer in the Mapbox Streets
+        // vector tileset contains building height data
+        // from OpenStreetMap.
+        map.addLayer(
+          {
+            id: "add-3d-buildings",
+            source: "composite",
+            "source-layer": "building",
+            filter: ["==", "extrude", "true"],
+            type: "fill-extrusion",
+            minzoom: 15,
+            paint: {
+              "fill-extrusion-color": "#aaa",
+
+              // Use an 'interpolate' expression to
+              // add a smooth transition effect to
+              // the buildings as the user zooms in.
+              "fill-extrusion-height": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                15,
+                0,
+                15.05,
+                ["get", "height"],
+              ],
+              "fill-extrusion-base": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                15,
+                0,
+                15.05,
+                ["get", "min_height"],
+              ],
+              "fill-extrusion-opacity": 0.6,
+            },
+          },
+          labelLayerId
+        );
+      });
+
+      map.addControl(new mapboxgl.NavigationControl(), "top-left");
+
+      map.addControl(
+        new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true,
+          },
+          // When active the map will receive updates to the device's location as it changes.
+          trackUserLocation: true,
+          // Draw an arrow next to the location dot to indicate which direction the device is heading.
+          showUserHeading: true,
+        }),
+        "top-left"
+      );
+
+      // map.addControl(
+      //   new MapboxDirections({
+      //     accessToken: mapboxgl.accessToken,
+      //   }),
+      //   "top-left"
+      // );
+
+      const geojson = {
+        type: "FeatureCollection",
+        features: [
+          {
+            type: "Feature",
+            id: 0,
+            properties: {
+              NAME: "BE Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "Basic Education Building is a 4-storey building located near CHS Building. This building accommodates Junior High School (Grade 7-10) and Senior High School Students (Grade 11-12) students.",
+              DESC_POI: "Faculty Office",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/beBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34226953983307, 16.046589343796313],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 1,
+            properties: {
+              NAME: "CHS Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "College of Health and Sciences Building is a 3-storey building located in-between UPang Gymnasium (left) and BE Building (right). This building accommodate students from CHS Department.",
+              DESC_POI: "Medical Laboratory",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/chsBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34206569194794, 16.046504279586813],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 2,
+            properties: {
+              NAME: "UPang Gymnasium",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "UPang Gymnasium is located in-between CHS Building (right) and Faculty Center (left). Events such as sports, mass, etc. are usually held in here. Physical Education classes are usually conducted in this building.",
+              DESC_POI: "Basketball Court, Main Stage, PE Office",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/gymBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34174382686615, 16.046365083529277],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 3,
+            properties: {
+              NAME: "Faculty Center",
+              PIC: "assets/img/school-bldng.png",
+              TEXT: "Description",
+              DESC: "Faculty Center is a 4-storey building located near UPang Gymanasium.",
+              DESC_POI: "CAS Office, CMA Office, Faculty Office",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/fcBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34145683050156, 16.0462129988367],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 4,
+            properties: {
+              NAME: "Engineering Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "Engineering building is a 3-storey building located in-between Faculty Center (right) and MBA Building (left). This building accommodate Engineering and Architecture Students.",
+              DESC_POI: "CEA Office",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/eBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34137904644012, 16.046473347137994],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 5,
+            properties: {
+              NAME: "PTC Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "Pangasinan Technological Center is 4-storey building. This building accommodates IT students and Law students.",
+              DESC_POI: "Mac Lab, IT Department",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/ptcBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34246534109116, 16.047164170684162],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 6,
+            properties: {
+              NAME: "ITC Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "Information Technological Center is a 2-storey building located near PTC Building.",
+              DESC_POI: "Center for Student Development and Leadership (CSDL)",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/itcBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34233391284943, 16.047027552784865],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 7,
+            properties: {
+              NAME: "FVR Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "FVR Building is a 2-storey building located near PTC Building. This building is named after Former Philippine President Fidel V. Ramos. You can find here the former President's collection of books and memorabilia that shows a glimpse of his life.",
+              ENTER: "Enter Building",
+              DESC_POI:
+                "Museum, Registrar, Finance Department, Marketing Department, Library",
+              FLOOR: "assets/html/fvrBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34204959869385, 16.046978576533984],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 8,
+            properties: {
+              NAME: "Student Plaza",
+              PIC: "assets/img/sp.jpg",
+              TEXT: "Description",
+              DESC: "Student Plaza is located near FVR Building and Forest Area. This is the place where students take rest, buy food, and hang out with their friends.",
+              DESC_POI: "Food Court",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/spBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34160435199739, 16.046795559910997],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 9,
+            properties: {
+              NAME: "MBA Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "MBA Building is a 5-storey building located in-between CEA Building (right) and NH Building (left). This building was named after the Vice Chairman of Philippine Investment Management (PHINMA) Inc. Dr. Magdaleno Albaraccin Jr.",
+              DESC_POI: "Canteen, Praying Hall",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/mbaBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34122079610825, 16.04679298221089],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 10,
+            properties: {
+              NAME: "Store Area",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "Description here.......",
+              DESC_POI: "Xerox Area, School Supplies Store",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/saBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34205496311188, 16.04717448146522],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 11,
+            properties: {
+              NAME: "CMA Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "College of Management and Accountancy Building is a 4-storey building located near NH Building. This building accommodate CMA students.",
+              DESC_POI: "CMA Office",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/cmaBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34192353487016, 16.047360075432874],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 12,
+            properties: {
+              NAME: "Automotive Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "Description here......",
+              DESC_POI: "List of Points of Interest here.....",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/aBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34178674221039, 16.047494115413077],
+            },
+          },
+
+          {
+            type: "Feature",
+            id: 13,
+            properties: {
+              NAME: "NH Building",
+              PIC: "assets/img/upang.png",
+              TEXT: "Description",
+              DESC: "North Hall Building is a 4-storey building located near MBA Building (right) and CMA Building (left).",
+              DESC_POI: "List of Points of Interest here.....",
+              ENTER: "Enter Building",
+              FLOOR: "assets/html/nhBuildingFloor.html",
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [120.34135490655898, 16.047290477715258],
+            },
+          },
+        ],
+      };
+
+      // add markers to map
+      for (const feature of geojson.features) {
+        // create a HTML element for each feature
+        const el = document.createElement("div");
+        el.className = "marker";
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.NAME}</h3><img src ="${feature.properties.PIC}" style="height: 150px; width: 180px;"></img>`
+              )
+          )
+          .addTo(map);
+      }
+    </script>
+  </body>
+</html>

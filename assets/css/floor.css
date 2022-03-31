@@ -1,0 +1,52 @@
+html,
+body,
+#container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+#map {
+  width: auto;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.room-label {
+  margin-left: -15px !important;
+  margin-top: -15px !important;
+  font-size: 100%;
+  width: auto !important;
+  height: auto !important;
+}
+.info {
+  width: 100px;
+  padding: 6px 8px;
+  font: 16px/18px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background: white;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.building_name {
+  width: 200px;
+  padding: 6px 8px;
+  font: 28px/30px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background: white;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#backBtn {
+  height: 30px; /* easyButton's height default */
+  width: 30px; /*  easyButton's width default */
+  border: none;
+  background-color: #ffffff;
+  border-radius: 4px;
+}

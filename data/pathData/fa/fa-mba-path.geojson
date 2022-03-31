@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "fa-mba-path",
+        "km": 0.005541
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.34131719108245, 16.04683944761095],
+          [120.34128232236492, 16.046825270262673],
+          [120.34127025242503, 16.04681850380004]
+        ]
+      }
+    }
+  ]
+}

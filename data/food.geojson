@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Food Court"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34147024154662, 16.046733695099007]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Campus Cafeteria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.3413388133049, 16.046671830267805]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "McDonalds"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34257799386978, 16.047099728290508]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Campus Canteen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34101694822311, 16.04714612681604]
+      }
+    }
+  ]
+}

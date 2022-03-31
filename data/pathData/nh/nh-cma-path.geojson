@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "nh-cma-path",
+        "km": 0.014742
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.34160813373376, 16.047348114742448],
+          [120.34161618036154, 16.047336515123348],
+          [120.34172648620694, 16.04738968003683]
+        ]
+      }
+    }
+  ]
+}

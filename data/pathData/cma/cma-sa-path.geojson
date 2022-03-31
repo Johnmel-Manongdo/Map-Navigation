@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "cma-sa-path",
+        "km": 0.021754
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.34187298010619, 16.047202975702902],
+          [120.34191321324153, 16.047114689636004],
+          [120.34200709055642, 16.04715593276717]
+        ]
+      }
+    }
+  ]
+}

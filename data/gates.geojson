@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+          "NAME": "Main Entrance and Exit Gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34255519509315, 16.047193814178236]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+          "NAME": "Vehicle Entrance and Exit Gate"
+        },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.3426356613636, 16.04701337545031]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Entrance and Exit Gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.3414125740528, 16.04655970021227]
+      }
+    }
+  ]
+}

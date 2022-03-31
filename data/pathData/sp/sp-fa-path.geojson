@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sp-fa-path",
+        "km": 0.00402
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.3416529994625, 16.04693352063319],
+          [120.34163355344708, 16.046964453009892]
+        ]
+      }
+    }
+  ]
+}

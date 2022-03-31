@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ptc-itc-path",
+        "km": "0.019004"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.34238039446774, 16.047198556549986],
+          [120.34224661931285, 16.04713991384112],
+          [120.34225969508168, 16.047113170246703]
+        ]
+      }
+    }
+  ]
+}

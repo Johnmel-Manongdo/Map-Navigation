@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Car Parking Area 3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34156143665315, 16.04652747892028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Car Parking Area 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34179478883742, 16.04663574244073]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Motorcyle Parking Area"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34208714962007, 16.046687296477412]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Motorcycle and Tricycle Parking Area"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34141391515732, 16.046638320142886]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Car Parking Area 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34163653850554, 16.04670276268581]
+      }
+    }
+  ]
+}

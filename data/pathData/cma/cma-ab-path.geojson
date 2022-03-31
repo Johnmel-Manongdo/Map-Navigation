@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "cma-ab-path",
+        "km": 0.001445
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [120.34176434102937, 16.047422808009316],
+          [120.34175897661169, 16.047434729833682]
+        ]
+      }
+    }
+  ]
+}
