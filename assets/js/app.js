@@ -793,7 +793,7 @@ var mainCampusBtn = L.easyButton(
   function () {
     map.setView([16.046967909993068, 120.34169210507243], 19);
   },
-  "Go back to main campus"
+  "Go back to main campus", "backBtn"
 ).addTo(map);
 
 var button3d = L.easyButton(
@@ -801,7 +801,7 @@ var button3d = L.easyButton(
   function () {
     window.location.href = "newMap.html";
   },
-  "3D Map"
+  "3D Map", "backBtn"
 ).addTo(map);
 
 /* Larger screens get expanded layer control and visible sidebar */
