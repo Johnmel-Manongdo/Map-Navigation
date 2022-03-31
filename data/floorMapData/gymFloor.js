@@ -31,6 +31,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "GSD Office",
       },
       geometry: {
         type: "Polygon",
@@ -49,6 +50,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Security Office",
       },
       geometry: {
         type: "Polygon",
@@ -67,6 +69,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Travel Tour Simulation Office",
       },
       geometry: {
         type: "Polygon",
@@ -85,6 +88,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Medical and Dental Clinic",
       },
       geometry: {
         type: "Polygon",
@@ -103,6 +107,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "NROTC Office",
       },
       geometry: {
         type: "Polygon",
@@ -141,6 +146,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Female CR",
       },
       geometry: {
         type: "Polygon",
@@ -159,6 +165,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Male CR",
       },
       geometry: {
         type: "Polygon",
@@ -195,6 +202,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Stage",
       },
       geometry: {
         type: "Polygon",
@@ -231,6 +239,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Printing Room",
       },
       geometry: {
         type: "Polygon",

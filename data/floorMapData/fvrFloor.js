@@ -38,6 +38,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "FVR Museum",
       },
       geometry: {
         type: "Polygon",
@@ -57,6 +58,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Marketing Department",
       },
       geometry: {
         type: "Polygon",
@@ -76,6 +78,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "3",
       },
       geometry: {
         type: "Polygon",
@@ -95,6 +98,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "4",
       },
       geometry: {
         type: "Polygon",
@@ -114,6 +118,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "5",
       },
       geometry: {
         type: "Polygon",
@@ -132,6 +137,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "6",
       },
       geometry: {
         type: "Polygon",
@@ -172,6 +178,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
+        name: "7",
       },
       geometry: {
         type: "Polygon",
@@ -191,6 +198,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
+        name: "8",
       },
       geometry: {
         type: "Polygon",

@@ -27,6 +27,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Female CR",
       },
       geometry: {
         type: "Polygon",
@@ -45,6 +46,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Male CR",
       },
       geometry: {
         type: "Polygon",
@@ -63,6 +65,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Mock Hospital",
       },
       geometry: {
         type: "Polygon",
@@ -100,6 +103,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
+        name: "CHS Office",
       },
       geometry: {
         type: "Polygon",
@@ -137,6 +141,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
+        name: "Culinary Arts Laboratory",
       },
       geometry: {
         type: "Polygon",
@@ -174,6 +179,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
+        name: "Amphitheater",
       },
       geometry: {
         type: "Polygon",

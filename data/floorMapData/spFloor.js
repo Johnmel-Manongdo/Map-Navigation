@@ -23,6 +23,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Stage",
       },
       geometry: {
         type: "Polygon",
@@ -41,6 +42,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Food Court Area",
       },
       geometry: {
         type: "Polygon",
@@ -59,6 +61,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
+        name: "Food Court Area",
       },
       geometry: {
         type: "Polygon",

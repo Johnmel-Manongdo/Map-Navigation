@@ -4,6 +4,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "test",
         level: 1,
       },
       geometry: {

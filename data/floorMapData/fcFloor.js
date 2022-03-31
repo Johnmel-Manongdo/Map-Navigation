@@ -26,6 +26,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "Male CR",
         level: 1,
       },
       geometry: {
@@ -44,6 +45,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "Female CR",
         level: 1,
       },
       geometry: {
@@ -62,6 +64,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "Engineering Laboratory",
         level: 1,
       },
       geometry: {
@@ -80,6 +83,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "MBA 200",
         level: 1,
       },
       geometry: {
@@ -120,6 +124,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "Engineering Laboratory",
         level: 2,
       },
       geometry: {
@@ -138,6 +143,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "Crime Laboratory",
         level: 2,
       },
       geometry: {
@@ -156,6 +162,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "MBA 202",
         level: 2,
       },
       geometry: {
@@ -174,6 +181,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "MBA 201",
         level: 2,
       },
       geometry: {
@@ -214,6 +222,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "CSS Office",
         level: 3,
       },
       geometry: {
@@ -232,6 +241,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "CMA Office",
         level: 3,
       },
       geometry: {
@@ -272,6 +282,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "CAS Office",
         level: 4,
       },
       geometry: {
@@ -292,6 +303,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
+        name: "Media & Learning Resource Room",
         level: 4,
       },
       geometry: {

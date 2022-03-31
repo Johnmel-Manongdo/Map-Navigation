@@ -27,7 +27,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "Waiting Area",
+        name: "CSDL Main Office",
       },
       geometry: {
         type: "Polygon",
@@ -50,7 +50,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "CSDL Main Office",
+        name: "Waiting Area",
       },
       geometry: {
         type: "Polygon",
@@ -89,7 +89,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "ITC Room",
+        name: "ITS Office",
       },
       geometry: {
         type: "Polygon",
@@ -108,7 +108,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "ITC Room",
+        name: "ITS 200",
       },
       geometry: {
         type: "Polygon",
@@ -127,7 +127,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "ITC Room",
+        name: "ITS 201",
       },
       geometry: {
         type: "Polygon",

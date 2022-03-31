@@ -27,7 +27,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "BE 1",
       },
       geometry: {
         type: "Polygon",
@@ -46,7 +46,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "BE 2",
       },
       geometry: {
         type: "Polygon",
@@ -65,7 +65,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "BE 3",
       },
       geometry: {
         type: "Polygon",
@@ -84,7 +84,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "BE 4",
       },
       geometry: {
         type: "Polygon",
@@ -103,7 +103,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "Stage",
       },
       geometry: {
         type: "Polygon",
@@ -122,7 +122,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "BE 5",
       },
       geometry: {
         type: "Polygon",
@@ -141,7 +141,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "BE 6",
       },
       geometry: {
         type: "Polygon",
@@ -160,7 +160,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "McDonald's",
+        name: "BE 7",
       },
       geometry: {
         type: "Polygon",
@@ -180,7 +180,6 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
       },
       geometry: {
         type: "Polygon",
@@ -199,7 +198,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 8",
       },
       geometry: {
         type: "Polygon",
@@ -218,7 +217,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 9",
       },
       geometry: {
         type: "Polygon",
@@ -237,7 +236,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 10",
       },
       geometry: {
         type: "Polygon",
@@ -256,7 +255,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 11",
       },
       geometry: {
         type: "Polygon",
@@ -275,7 +274,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 12",
       },
       geometry: {
         type: "Polygon",
@@ -294,7 +293,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 13",
       },
       geometry: {
         type: "Polygon",
@@ -313,7 +312,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 14",
       },
       geometry: {
         type: "Polygon",
@@ -332,7 +331,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "McDonald's",
+        name: "BE 15",
       },
       geometry: {
         type: "Polygon",
@@ -352,7 +351,6 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
       },
       geometry: {
         type: "Polygon",
@@ -372,7 +370,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "Office of the JHS/SHS Director",
       },
       geometry: {
         type: "Polygon",
@@ -391,7 +389,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "BE Library",
       },
       geometry: {
         type: "Polygon",
@@ -410,7 +408,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "BE 16",
       },
       geometry: {
         type: "Polygon",
@@ -429,7 +427,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "BE 17",
       },
       geometry: {
         type: "Polygon",
@@ -448,7 +446,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "BE 18",
       },
       geometry: {
         type: "Polygon",
@@ -467,7 +465,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "BE 19",
       },
       geometry: {
         type: "Polygon",
@@ -486,7 +484,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "BE 20",
       },
       geometry: {
         type: "Polygon",
@@ -505,7 +503,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "McDonald's",
+        name: "BE 21",
       },
       geometry: {
         type: "Polygon",
@@ -525,7 +523,6 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
       },
       geometry: {
         type: "Polygon",
@@ -545,7 +542,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 22",
       },
       geometry: {
         type: "Polygon",
@@ -564,7 +561,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 23",
       },
       geometry: {
         type: "Polygon",
@@ -583,7 +580,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 24",
       },
       geometry: {
         type: "Polygon",
@@ -602,7 +599,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 25",
       },
       geometry: {
         type: "Polygon",
@@ -621,7 +618,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 26",
       },
       geometry: {
         type: "Polygon",
@@ -640,7 +637,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 27",
       },
       geometry: {
         type: "Polygon",
@@ -659,7 +656,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 28",
       },
       geometry: {
         type: "Polygon",
@@ -678,7 +675,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "McDonald's",
+        name: "BE 29",
       },
       geometry: {
         type: "Polygon",
