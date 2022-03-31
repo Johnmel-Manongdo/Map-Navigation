@@ -46,11 +46,15 @@
       map = L.map('map');
 
       var cartoLight = L.tileLayer(
-              "https://api.mapbox.com/styles/v1/shoji-yamada/cl0pbw9ry001914mlx7h5ljpd/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2hvamkteWFtYWRhIiwiYSI6ImNrdWd3M3Z3NDAxbWMyb3F0cGE5a3N0b2wifQ.u8mZVVWfCnxmT_6_FXzVzw",
-              {
-        minZoom: 3,
-        maxZoom: 23,
-      });
+              "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=01bcfb36ac6e47b392b2d57aee8105fa",
+            {
+              attribution:
+                '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              apikey: "01bcfb36ac6e47b392b2d57aee8105fa",
+              minZoom: 3,
+              maxZoom: 23,
+            }
+            );
       map.setView(new L.LatLng(16.046589343796313, 120.34226953983307), 21);
       map.addLayer(cartoLight);
 
