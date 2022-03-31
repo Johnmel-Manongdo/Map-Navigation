@@ -26,6 +26,7 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
     <script src="/assets/js/leaflet-indoor.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
   </head>
 
   <body>
@@ -62,13 +63,47 @@
       });
       indoor.addTo(map);
 
-      L.easyButton(
-        "<i class='fa fa-chevron-left'></i>",
-        function () {
-          window.location.href = "/index.php";
-        },
-        "Go back to main campus"
-      ).addTo(map);
+       /* GPS enabled geolocation control set to follow the user's location */
+       var locateControl = L.control
+        .locate({
+          position: "topleft",
+          drawCircle: true,
+          follow: true,
+          setView: true,
+          keepCurrentZoomLevel: true,
+          markerStyle: {
+            weight: 1,
+            opacity: 0.8,
+            fillOpacity: 0.8,
+          },
+          circleStyle: {
+            weight: 1,
+            clickable: false,
+          },
+          icon: "fa fa-map-marker",
+          metric: false,
+          strings: {
+            title: "My location",
+            popup: "You are within {distance} {unit} from this point",
+            outsideMapBoundsMsg: "You seem located outside the boundaries of the map",
+          },
+          locateOptions: {
+            maxZoom: 18,
+            watch: true,
+            enableHighAccuracy: true,
+            maximumAge: 10000,
+            timeout: 10000,
+          },
+        })
+        .addTo(map);
+
+        L.easyButton(
+              "<i class='fa fa-chevron-left'></i>",
+              function () {
+                window.location.href = "/index.php";
+              },
+              "Go back to main campus", "backBtn"
+            ).addTo(map);
 
       var legend = L.control({position: 'topright'});
       legend.onAdd = function(map) {
