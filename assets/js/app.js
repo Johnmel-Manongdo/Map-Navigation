@@ -90,24 +90,6 @@ $("#goToEventVenueID").click(function () {
   );
 });
 
-// admin btn show modal
-// $("#admin-btn").click(function () {
-//   $("#adminModal").modal("show");
-//   $(".navbar-collapse.in").collapse("hide");
-//   return false;
-// });
-
-// feedback btn show modal
-// $("#description-btn").click(function () {
-//   $("#descriptionModal").modal("show");
-//   $(".navbar-collapse.in").collapse("hide");
-//   return false;
-// });
-
-// $("#featureModal").on("hidden.bs.modal", function (e) {
-//   $(document).on("mouseout", ".feature-row", clearHighlight);
-// });
-
 $("#list-btn").click(function () {
   animateSidebar();
   return false;
@@ -259,89 +241,6 @@ var mapbox = L.tileLayer(
   }
 );
 
-// mapboxgl.accessToken =
-//   "pk.eyJ1Ijoic2hvamkteWFtYWRhIiwiYSI6ImNrdWd3M3Z3NDAxbWMyb3F0cGE5a3N0b2wifQ.u8mZVVWfCnxmT_6_FXzVzw";
-// const mapbox = new mapboxgl.Map({
-//   style: "mapbox://styles/mapbox/light-v10",
-//   center: [120.34246534109116, 16.047164170684162],
-//   zoom: 15.5,
-//   pitch: 45,
-//   bearing: -17.6,
-//   container: "map",
-//   antialias: true,
-// });
-
-// mapbox.on("load", () => {
-//   // Insert the layer beneath any symbol layer.
-//   const layers = mapbox.getStyle().layers;
-//   const labelLayerId = layers.find(
-//     (layer) => layer.type === "symbol" && layer.layout["text-field"]
-//   ).id;
-
-//   // The 'building' layer in the Mapbox Streets
-//   // vector tileset contains building height data
-//   // from OpenStreetMap.
-//   mapbox.addLayer(
-//     {
-//       id: "add-3d-buildings",
-//       source: "composite",
-//       "source-layer": "building",
-//       filter: ["==", "extrude", "true"],
-//       type: "fill-extrusion",
-//       minzoom: 15,
-//       paint: {
-//         "fill-extrusion-color": "#aaa",
-
-//         // Use an 'interpolate' expression to
-//         // add a smooth transition effect to
-//         // the buildings as the user zooms in.
-//         "fill-extrusion-height": [
-//           "interpolate",
-//           ["linear"],
-//           ["zoom"],
-//           15,
-//           0,
-//           15.05,
-//           ["get", "height"],
-//         ],
-//         "fill-extrusion-base": [
-//           "interpolate",
-//           ["linear"],
-//           ["zoom"],
-//           15,
-//           0,
-//           15.05,
-//           ["get", "min_height"],
-//         ],
-//         "fill-extrusion-opacity": 0.6,
-//       },
-//     },
-//     labelLayerId
-//   );
-// });
-
-// var cartoLight = L.tileLayer(
-//   "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-//   {
-//     minZoom: 18,
-//     maxZoom: 21,
-//     attribution:
-//       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>',
-//   }
-// );
-
-// var mapbox = L.tileLayer(
-//   "https://api.mapbox.com/styles/v1/shoji-yamada/cl0pbnn5e005d14pkjc75sidg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2hvamkteWFtYWRhIiwiYSI6ImNrdWd3M3Z3NDAxbWMyb3F0cGE5a3N0b2wifQ.u8mZVVWfCnxmT_6_FXzVzw",
-//   {
-//     minZoom: 3,
-//     maxZoom: 21,
-//     tileSize: 512,
-//     zoomOffset: -1,
-//     attribution:
-//       '© <a href="https://www.mapbox.com/contribute/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-//   }
-// );
-
 var googleSat = L.tileLayer(
   "http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
   {
@@ -376,23 +275,8 @@ $.getJSON("data/border.geojson", function (data) {
   borders.addData(data);
 });
 
-// building border
-// var building_borders = L.geoJson(null, {
-//   style: function (feature) {
-//     return {
-//       color: "lightgreen",
-//       fill: false,
-//       opacity: 1,
-//       clickable: false,
-//       weight: 1,
-//     };
-//   },
-// });
-// $.getJSON("data/building_border.geojson", function (data) {
-//   building_borders.addData(data);
-// });
 
-// building border
+// building path
 var building_path = L.geoJson(null, {
   style: function (feature) {
     return {
@@ -417,12 +301,6 @@ function reset() {
   dropDownStart.selectedIndex = 0;
   dropDownEnd.selectedIndex = 0;
 }
-
-// var helloPopup = L.popup().setContent("Hello World!");
-
-// L.easyButton("fa-globe", function (btn, map) {
-//   helloPopup.setLatLng(map.getCenter()).openOn(map);
-// }).addTo(map);
 
 function removePathBtn() {
   var pathDetailsDiv = L.easyButton(
@@ -493,55 +371,6 @@ var buildings = L.geoJson(null, {
       layer.on("popupopen", () => {
         $("#enter-btn").click(function () {
           window.location.href = feature.properties.FLOOR;
-          // "<a href='test.html'>" + "</a>"
-          // map.setView(
-          //   [
-          //     layer.feature.geometry.coordinates[1],
-          //     layer.feature.geometry.coordinates[0],
-          //   ],
-          //   25
-          // );
-          // zoomLevel();
-          // var floor1 = L.easyButton("<strong>1</strong>", function () {}, {
-          //   position: "bottomleft",
-          // }).addTo(map);
-          // var floor2 = L.easyButton("<strong>2</strong>", function () {}, {
-          //   position: "bottomleft",
-          // }).addTo(map);
-          // var floor3 = L.easyButton("<strong>3</strong>", function () {}, {
-          //   position: "bottomleft",
-          // }).addTo(map);
-          // var floor4 = L.easyButton("<strong>4</strong>", function () {}, {
-          //   position: "bottomleft",
-          // }).addTo(map);
-          // function zoomLevel() {
-          //   map.on("zoomend", function (e) {
-          //     var max = 21,
-          //       current = map.getZoom();
-          //     if (current < max) {
-          //       floor1.disable();
-          //       floor2.disable();
-          //       floor3.disable();
-          //       floor4.disable();
-          //       animateSidebar();
-          //       markerClusters.addLayer(buildings);
-          //     }
-          //     if (current >= max) {
-          //       floor1.enable();
-          //       floor2.enable();
-          //       floor3.enable();
-          //       floor4.enable();
-          //       animateSidebar();
-          //       markerClusters.removeLayer(buildings);
-          //       markerClusters.removeLayer(parkings);
-          //       markerClusters.removeLayer(foods);
-          //       markerClusters.removeLayer(gates);
-          //     }
-          //   });
-          // }
-          // $("#enterModal").modal("show");
-          // $(".navbar-collapse.in").collapse("hide");
-          // return false;
         });
       });
       buildingSearch.push({
@@ -716,11 +545,6 @@ map.on("overlayremove", function (e) {
   }
 });
 
-/* Filter sidebar feature list to only show features in current map bounds */
-// map.on("moveend", function (e) {
-//   syncSidebar();
-// });
-
 /* Clear feature highlight when map is clicked */
 map.on("click", function (e) {
   highlight.clearLayers();
@@ -766,26 +590,6 @@ var locateControl = L.control
     },
   })
   .addTo(map);
-
-// locate user
-// var markerGroup = L.layerGroup([
-//   L.marker([16.0242420, 120.3777770]) ]);
-
-// var toggle = L.easyButton({
-// states: [{
-// stateName: 'add-markers',
-// icon: 'fa-map-marker',
-// title: 'My Location',
-
-// onClick: function(control) {
-//   map.addLayer(markerGroup);
-//   map.setView([16.0242420, 120.3777770], 16);
-//   control.state('remove-markers');
-// },
-
-// }]
-// });
-// toggle.addTo(map);
 
 // locate campus
 var mainCampusBtn = L.easyButton(

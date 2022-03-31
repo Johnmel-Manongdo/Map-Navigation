@@ -17,12 +17,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <!-- <link
-      href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"
-      rel="stylesheet"
-    /> -->
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css" />
@@ -31,7 +25,6 @@
   <link rel="stylesheet" href="assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.css" />
   <link rel="stylesheet" href="assets/css/app.css" />
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon-76.png" />
   <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon-120.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon-152.png" />
@@ -83,18 +76,6 @@
                 <a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="feedback-btn"><i class="fa fa-commenting-o"></i>&nbsp;&nbsp;Send
                   Feedback</a>
               </li>
-              <!-- <li class="divider hidden-xs"></li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse.in"
-                    id="admin-btn"
-                    ><i class="fa fa-user"></i>&nbsp;&nbsp;Admin</a
-                  >
-                </li> -->
             </ul>
           </li>
         </ul>
@@ -563,23 +544,23 @@
               <p><b>Tell us your experience after using the app</b></p>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackEmoji" value="sad.png">
-                <img src="assets/img/sad.png" alt="sad icon" title="I don' t like it" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/sad.png" alt="sad icon" title="I don' t like it" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackEmoji" value="thinking.png">
-                <img src="assets/img/thinking.png" alt="confused icon" title="I'm confused!" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/thinking.png" alt="confused icon" title="I'm confused!" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackEmoji" value="smile.png">
-                <img src="assets/img/smile.png" alt="smile icon" title="It's okay" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/smile.png" alt="smile icon" title="It's okay" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackEmoji" value="wow.png">
-                <img src="assets/img/wow.png" alt="amaze icon" title="It's amazing!" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/wow.png" alt="amaze icon" title="It's amazing!" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackEmoji" value="emoji.png">
-                <img src="assets/img/emoji.png" alt="in-love icon" title="I love it!" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/emoji.png" alt="in-love icon" title="I love it!" style="height: 50px;width: 50px;padding: 10px;">
               </label>
             </div>
 
@@ -587,31 +568,26 @@
               <p><b>Give us your rating</b></p>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackRating" value="1">
-                <img src="assets/img/number-one.png" alt="1" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/number-one.png" alt="1" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackRating" value="2">
-                <img src="assets/img/number-2.png" alt="2" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/number-2.png" alt="2" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackRating" value="3">
-                <img src="assets/img/number-3.png" alt="3" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/number-3.png" alt="3" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackRating" value="4">
-                <img src="assets/img/number-four.png" alt="4" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/number-four.png" alt="4" style="height: 50px;width: 50px;padding: 10px;">
               </label>
               <label class="feedbackRadio">
                 <input type="radio" name="feedbackRating" value="5">
-                <img src="assets/img/number-5.png" alt="5" style="height: 60px;width: 60px;padding: 10px;">
+                <img src="assets/img/number-5.png" alt="5" style="height: 50px;width: 50px;padding: 10px;">
               </label>
             </div>
 
-            <!-- <div class="form-group">
-              <label for="feedbackUser">Email</label>
-              <input class="form-control" value="<?php if (isset($_GET['feedbackUser']))
-                                                    echo ($_GET['feedbackUser']); ?>" type="email" name="feedbackUser" placeholder="Enter your email" required />
-            </div> -->
             <div class="form-group">
               <label for="feedbackText">Feedback</label>
               <textarea class="form-control" value="<?php if (isset($_GET['feedbackText']))
