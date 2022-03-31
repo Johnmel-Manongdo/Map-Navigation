@@ -14,7 +14,7 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="stylesheet" href="/Map_Navigation/assets/css/floor.css" />
+    <link rel="stylesheet" href="/assets/css/floor.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -25,7 +25,7 @@
     />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
-    <script src="/Map_Navigation/assets/js/leaflet-indoor.js"></script>
+    <script src="/assets/js/leaflet-indoor.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
   </head>
 
@@ -33,7 +33,7 @@
     <div id="map"></div>
     <script
       type="text/javascript"
-      src="/Map_Navigation/data/floorMapData/abFloor.js"
+      src="/data/floorMapData/abFloor.js"
     ></script>
     <script type="text/JavaScript">
 
@@ -100,7 +100,7 @@
         L.easyButton(
               "<i class='fa fa-chevron-left'></i>",
               function () {
-                window.location.href = "/Map_Navigation/index.php";
+                window.location.href = "/index.php";
               },
               "Go back to main campus", "backBtn"
             ).addTo(map);
