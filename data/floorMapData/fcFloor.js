@@ -162,7 +162,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
-        name: "MBA 202",
+        name: "MBA 203",
         level: 2,
       },
       geometry: {
@@ -181,7 +181,7 @@ var geoJSON = {
     {
       type: "Feature",
       properties: {
-        name: "MBA 201",
+        name: "MBA 202",
         level: 2,
       },
       geometry: {

@@ -27,7 +27,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "NH 114",
       },
       geometry: {
         type: "Polygon",
@@ -65,7 +65,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "3",
+        name: "NH 120",
       },
       geometry: {
         type: "Polygon",
@@ -84,7 +84,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "4",
+        name: "NH 119",
       },
       geometry: {
         type: "Polygon",
@@ -103,7 +103,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "5",
+        name: "NH 117",
       },
       geometry: {
         type: "Polygon",
@@ -122,7 +122,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "6",
+        name: "NH 116",
       },
       geometry: {
         type: "Polygon",
@@ -141,7 +141,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "7",
+        name: "NH 115",
       },
       geometry: {
         type: "Polygon",
@@ -160,7 +160,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "8",
+        name: "NH 118",
       },
       geometry: {
         type: "Polygon",
@@ -221,7 +221,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "NH 214",
       },
       geometry: {
         type: "Polygon",
@@ -240,17 +240,17 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "Female CR",
+        name: "NH 221",
       },
       geometry: {
         type: "Polygon",
         coordinates: [
           [
-            [120.341616693484681, 16.047492028561557],
-            [120.341679677173317, 16.047523013845424],
-            [120.341702921153654, 16.047477616801043],
-            [120.341642186882467, 16.047448072682908],
-            [120.341616693484681, 16.047492028561557],
+            [120.341616058445084, 16.047491973866347],
+            [120.341648222023906, 16.047430153342376],
+            [120.341710801160971, 16.047457031833414],
+            [120.341679336790378, 16.047520532254097],
+            [120.341616058445084, 16.047491973866347],
           ],
         ],
       },
@@ -259,7 +259,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "3",
+        name: "NH 220",
       },
       geometry: {
         type: "Polygon",
@@ -278,7 +278,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "4",
+        name: "NH 219",
       },
       geometry: {
         type: "Polygon",
@@ -297,7 +297,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "5",
+        name: "NH 217",
       },
       geometry: {
         type: "Polygon",
@@ -316,7 +316,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "6",
+        name: "NH 216",
       },
       geometry: {
         type: "Polygon",
@@ -335,7 +335,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "7",
+        name: "NH 215",
       },
       geometry: {
         type: "Polygon",
@@ -354,7 +354,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "8",
+        name: "NH 218",
       },
       geometry: {
         type: "Polygon",
@@ -396,7 +396,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "NH 314",
       },
       geometry: {
         type: "Polygon",
@@ -415,17 +415,17 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "Male CR",
+        name: "NH 221",
       },
       geometry: {
         type: "Polygon",
         coordinates: [
           [
-            [120.341616693484681, 16.047492028561557],
-            [120.341679677173317, 16.047523013845424],
-            [120.341702921153654, 16.047477616801043],
-            [120.341642186882467, 16.047448072682908],
-            [120.341616693484681, 16.047492028561557],
+            [120.341616058445084, 16.047491973866347],
+            [120.341648222023906, 16.047430153342376],
+            [120.341710801160971, 16.047457031833414],
+            [120.341679336790378, 16.047520532254097],
+            [120.341616058445084, 16.047491973866347],
           ],
         ],
       },
@@ -434,7 +434,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "3",
+        name: "NH 220",
       },
       geometry: {
         type: "Polygon",
@@ -453,7 +453,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "4",
+        name: "NH 219",
       },
       geometry: {
         type: "Polygon",
@@ -472,7 +472,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "5",
+        name: "NH 317",
       },
       geometry: {
         type: "Polygon",
@@ -491,7 +491,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "6",
+        name: "NH 316",
       },
       geometry: {
         type: "Polygon",
@@ -510,7 +510,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "7",
+        name: "NH 315",
       },
       geometry: {
         type: "Polygon",
@@ -529,7 +529,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "8",
+        name: "NH 318",
       },
       geometry: {
         type: "Polygon",
@@ -571,7 +571,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "NH 414",
       },
       geometry: {
         type: "Polygon",
@@ -628,7 +628,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "3",
+        name: "NH 420",
       },
       geometry: {
         type: "Polygon",
@@ -647,7 +647,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "4",
+        name: "NH 419",
       },
       geometry: {
         type: "Polygon",
@@ -666,7 +666,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "5",
+        name: "NH 417",
       },
       geometry: {
         type: "Polygon",
@@ -685,7 +685,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "6",
+        name: "NH 416",
       },
       geometry: {
         type: "Polygon",
@@ -704,7 +704,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "7",
+        name: "NH 415",
       },
       geometry: {
         type: "Polygon",
@@ -723,7 +723,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "8",
+        name: "NH 418",
       },
       geometry: {
         type: "Polygon",
