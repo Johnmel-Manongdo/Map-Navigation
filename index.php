@@ -689,6 +689,7 @@
                     <div id="description-pic"></div>
                     <hr />
                     <p><b>Points of Interest:</b></p>
+                    <p id="description-poi-1"></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">
