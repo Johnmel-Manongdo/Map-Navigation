@@ -503,7 +503,7 @@ map = L.map("map", {
   center: [16.046967909993068, 120.34169210507243],
   layers: [cartoLight, borders, markerClusters, highlight],
   zoomControl: false,
-  attributionControl: false,
+  // attributionControl: false,
 });
 
 // Layer control listeners that allow for a single markerClusters layer

@@ -9,7 +9,7 @@
         "PIC": "assets/img/building_image/be_building.jpg",
         "TEXT": "Description",
         "DESC": "Basic Education Building is a 4-storey building located near CHS Building. This building accommodates Junior High School (Grade 7-10) and Senior High School Students (Grade 11-12) students.",
-        "DESC_POI": "Faculty Office",
+        "DESC_POI": "Office of the JHS/SHS Director, Basic Education Library",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/beBuildingFloor.html"
       },
@@ -27,7 +27,7 @@
         "PIC": "assets/img/building_image/chs_building.jpg",
         "TEXT": "Description",
         "DESC": "College of Health and Sciences Building is a 3-storey building located in-between UPang Gymnasium (left) and BE Building (right). This building accommodate students from CHS Department.",
-        "DESC_POI": "Medical Laboratory",
+        "DESC_POI": "Mock Hospital, College of Health Sciences, Culinary Arts Laboratory, Amphitheater",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/chsBuildingFloor.html"
       },
@@ -45,7 +45,7 @@
         "PIC": "assets/img/building_image/gym.jpg",
         "TEXT": "Description",
         "DESC": "UPang Gymnasium is located in-between CHS Building (right) and Faculty Center (left). Events such as sports, mass, etc. are usually held in here. Physical Education classes are usually conducted in this building.",
-        "DESC_POI": "Basketball Court, Main Stage, PE Office",
+        "DESC_POI": "General Services Department Office (GSD), Security Office, Travel Tour Simulation Room, Medical and Dental Clinic, Printing Room, NROTC Office",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/gymBuildingFloor.html"
       },
@@ -63,7 +63,7 @@
         "PIC": "assets/img/building_image/faculty_center.jpg",
         "TEXT": "Description",
         "DESC": "Faculty Center is a 4-storey building located near UPang Gymanasium.",
-        "DESC_POI": "CAS Office, CMA Office, Faculty Office",
+        "DESC_POI": "Engineering Laboratory, Crime Laboratory, College of Social Sciences Office (CSS), College of Management and Accountancy Office (CMA), Media and Learning Resource Room, College of Arts and Sciences (CAS)",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/fcBuildingFloor.html"
       },
@@ -81,7 +81,7 @@
         "PIC": "assets/img/upang.png",
         "TEXT": "Description",
         "DESC": "Engineering building is a 3-storey building located in-between Faculty Center (right) and MBA Building (left). This building accommodate Engineering and Architecture Students.",
-        "DESC_POI": "CEA Office",
+        "DESC_POI": "College of Engineering and Architecture Office (CEA)",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/eBuildingFloor.html"
       },
@@ -99,7 +99,7 @@
         "PIC": "assets/img/building_image/ptc_building.jpg",
         "TEXT": "Description",
         "DESC": "Pangasinan Technological Center is 4-storey building. This building accommodates IT students and Law students.",
-        "DESC_POI": "Mac Lab, IT Department",
+        "DESC_POI": "University of Pangasinan Faculty Union Office (UPFU), Mac Lab, College of Information and Technology Education Office (CITE), College of Law Office, College of Law Library",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/ptcBuildingFloor.html"
       },
@@ -113,11 +113,11 @@
       "type": "Feature",
       "id": 6,
       "properties": {
-        "NAME": "ITC Building",
+        "NAME": "ITS Building",
         "PIC": "assets/img/upang.png",
         "TEXT": "Description",
-        "DESC": "Information Technological Center is a 2-storey building located near PTC Building.",
-        "DESC_POI": "Center for Student Development and Leadership (CSDL)",
+        "DESC": "Information Technology Services is a 2-storey building located near PTC Building.",
+        "DESC_POI": "Center for Student Development and Leadership (CSDL), Information Technology Services Office",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/itcBuildingFloor.html"
       },
@@ -131,12 +131,12 @@
       "type": "Feature",
       "id": 7,
       "properties": {
-        "NAME": "FVR Building",
+        "NAME": "Administration Building",
         "PIC": "assets/img/building_image/fvr_building.jpg",
         "TEXT": "Description",
-        "DESC": "FVR Building is a 2-storey building located near PTC Building. This building is named after Former Philippine President Fidel V. Ramos. You can find here the former President's collection of books and memorabilia that shows a glimpse of his life.",
+        "DESC": "Administration Building is a 2-storey building located near PTC Building. You can find here the former President Fidel V. Ramos collection of books and memorabilia that shows a glimpse of his life.",
         "ENTER": "Enter Building",
-        "DESC_POI": "Museum, Registrar, Finance Department, Marketing Department, Library",
+        "DESC_POI": "Office of the Registrar, Office of the Comptroller / Finance, Library, FVR Museum, Marketing Office, University Research Committee Office, PEN Research Director's Office, Office of the President / EVP COO",
         "FLOOR": "assets/html/fvrBuildingFloor.html"
       },
       "geometry": {
@@ -152,8 +152,8 @@
         "NAME": "Student Plaza",
         "PIC": "assets/img/building_image/student_plaza.jpg",
         "TEXT": "Description",
-        "DESC": "Student Plaza is located near FVR Building and Forest Area. This is the place where students take rest, buy food, and hang out with their friends.",
-        "DESC_POI": "Food Court",
+        "DESC": "Student Plaza is located near Administration Building and Forest Area. This is the place where students take rest, buy food, and hang out with their friends.",
+        "DESC_POI": "Food Court, Stage",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/spBuildingFloor.html"
       },
@@ -171,7 +171,7 @@
         "PIC": "assets/img/building_image/mba_building.jpg",
         "TEXT": "Description",
         "DESC": "MBA Building is a 5-storey building located in-between CEA Building (right) and NH Building (left). This building was named after the Vice Chairman of Philippine Investment Management (PHINMA) Inc. Dr. Magdaleno Albaraccin Jr.",
-        "DESC_POI": "Canteen, Praying Hall",
+        "DESC_POI": "Office of Graduate Studies, University Canteen, Human Resource Department (HRD), University Chapel, Employees Lounge, Audio Visual Room (AVR), Science Laboratories",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/mbaBuildingFloor.html"
       },
@@ -207,7 +207,7 @@
         "PIC": "assets/img/building_image/cma_building.jpg",
         "TEXT": "Description",
         "DESC": "College of Management and Accountancy Building is a 4-storey building located near NH Building. This building accommodate CMA students.",
-        "DESC_POI": "CMA Office",
+        "DESC_POI": "College of Management and Accountancy Office (CMA)",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/cmaBuildingFloor.html"
       },
@@ -225,7 +225,7 @@
         "PIC": "assets/img/upang.png",
         "TEXT": "Description",
         "DESC": "Description here......",
-        "DESC_POI": "List of Points of Interest here.....",
+        "DESC_POI": "...",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/aBuildingFloor.html"
       },
@@ -243,7 +243,7 @@
         "PIC": "assets/img/building_image/nh_building.jpg",
         "TEXT": "Description",
         "DESC": "North Hall Building is a 4-storey building located near MBA Building (right) and CMA Building (left).",
-        "DESC_POI": "List of Points of Interest here.....",
+        "DESC_POI": "...",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/nhBuildingFloor.html"
       },
