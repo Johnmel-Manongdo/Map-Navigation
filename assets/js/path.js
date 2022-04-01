@@ -550,13 +550,16 @@ function getGeojsonPath() {
     });
   }
 
-  //fvr
-  if (start == "FVR Building" && finish == "FVR Building") {
+  //administration
+  if (
+    start == "Administration Building" &&
+    finish == "Administration Building"
+  ) {
     building_path.clearLayers();
   }
   if (
-    (start == "FVR Building" && finish == "Automotive Building") ||
-    (start == "Automotive Building" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "Automotive Building") ||
+    (start == "Automotive Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-ab-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -568,8 +571,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "BE Building") ||
-    (start == "BE Building" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "BE Building") ||
+    (start == "BE Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-be-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -581,8 +584,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "CHS Building") ||
-    (start == "CHS Building" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "CHS Building") ||
+    (start == "CHS Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-chs-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -594,8 +597,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "CMA Building") ||
-    (start == "CMA Building" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "CMA Building") ||
+    (start == "CMA Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-cma-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -607,8 +610,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "Engineering Building") ||
-    (start == "Engineering Building" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "Engineering Building") ||
+    (start == "Engineering Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-eb-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -620,8 +623,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "Forest Area") ||
-    (start == "Forest Area" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "Forest Area") ||
+    (start == "Forest Area" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-fa-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -633,8 +636,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "Faculty Center") ||
-    (start == "Faculty Center" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "Faculty Center") ||
+    (start == "Faculty Center" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-fc-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -646,8 +649,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "UPang Gymnasium") ||
-    (start == "UPang Gymnasium" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "UPang Gymnasium") ||
+    (start == "UPang Gymnasium" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-gym-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -659,8 +662,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "MBA Building") ||
-    (start == "MBA Building" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "MBA Building") ||
+    (start == "MBA Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-mba-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -672,8 +675,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "NH Building") ||
-    (start == "NH Building" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "NH Building") ||
+    (start == "NH Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-nh-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -685,10 +688,10 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "Faculty Center" && finish == "Store Area") ||
-    (start == "Store Area" && finish == "Faculty Center")
+    (start == "Administration Building" && finish == "Store Area") ||
+    (start == "Store Area" && finish == "Administration Building")
   ) {
-    $.getJSON("data/pathData/fvr/fc-sa-path.geojson", function (data) {
+    $.getJSON("data/pathData/fvr/fvr-sa-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
       else {
         building_path.addTo(map);
@@ -698,8 +701,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "FVR Building" && finish == "Student Plaza") ||
-    (start == "Student Plaza" && finish == "FVR Building")
+    (start == "Administration Building" && finish == "Student Plaza") ||
+    (start == "Student Plaza" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-sp-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -833,13 +836,13 @@ function getGeojsonPath() {
     });
   }
 
-  //itc
-  if (start == "ITC Building" && finish == "ITC Building") {
+  //its
+  if (start == "ITS Building" && finish == "ITS Building") {
     building_path.clearLayers();
   }
   if (
-    (start == "ITC Building" && finish == "Automotive Building") ||
-    (start == "Automotive Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "Automotive Building") ||
+    (start == "Automotive Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-ab-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -851,8 +854,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "BE Building") ||
-    (start == "BE Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "BE Building") ||
+    (start == "BE Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-be-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -864,8 +867,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "CHS Building") ||
-    (start == "CHS Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "CHS Building") ||
+    (start == "CHS Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-chs-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -877,8 +880,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "CMA Building") ||
-    (start == "CMA Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "CMA Building") ||
+    (start == "CMA Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-cma-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -890,8 +893,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "Engineering Building") ||
-    (start == "Engineering Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "Engineering Building") ||
+    (start == "Engineering Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-eb-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -903,8 +906,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "Forest Area") ||
-    (start == "Forest Area" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "Forest Area") ||
+    (start == "Forest Area" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-fa-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -916,8 +919,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "Faculty Center") ||
-    (start == "Faculty Center" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "Faculty Center") ||
+    (start == "Faculty Center" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-fc-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -929,8 +932,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "FVR Building") ||
-    (start == "FVR Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "Administration Building") ||
+    (start == "Administration Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-fvr-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -942,8 +945,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "UPang Gymnasium") ||
-    (start == "UPang Gymnasium" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "UPang Gymnasium") ||
+    (start == "UPang Gymnasium" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-gym-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -955,8 +958,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "MBA Building") ||
-    (start == "MBA Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "MBA Building") ||
+    (start == "MBA Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-mba-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -968,8 +971,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "NH Building") ||
-    (start == "NH Building" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "NH Building") ||
+    (start == "NH Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-nh-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -981,8 +984,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "Store Area") ||
-    (start == "Store Area" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "Store Area") ||
+    (start == "Store Area" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-sa-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -994,8 +997,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "ITC Building" && finish == "Student Plaza") ||
-    (start == "Student Plaza" && finish == "ITC Building")
+    (start == "ITS Building" && finish == "Student Plaza") ||
+    (start == "Student Plaza" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-sp-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -1230,8 +1233,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "PTC Building" && finish == "FVR Building") ||
-    (start == "FVR Building" && finish == "PTC Building")
+    (start == "PTC Building" && finish == "Administration Building") ||
+    (start == "Administration Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-fvr-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
@@ -1256,8 +1259,8 @@ function getGeojsonPath() {
     });
   }
   if (
-    (start == "PTC Building" && finish == "ITC Building") ||
-    (start == "ITC Building" && finish == "PTC Building")
+    (start == "PTC Building" && finish == "ITS Building") ||
+    (start == "ITS Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-itc-path.geojson", function (data) {
       if (map.hasLayer(building_path)) building_path.clearLayers();
