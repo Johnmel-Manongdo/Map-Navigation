@@ -389,7 +389,7 @@
                         </div>
                         <div class="tab-pane fade in" id="team">
 
-                            <div class="d-flex">
+                            <div class="container">
                                 <ul class="list-inline mx-auto justify-content-center">
                                     <li class="list-inline-item">Johnmel Manongdo</li>
                                     <li class="list-inline-item">James Stephen Biagtan</li>
