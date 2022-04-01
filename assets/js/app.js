@@ -225,7 +225,7 @@ var cartoLight = L.tileLayer(
   "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=01bcfb36ac6e47b392b2d57aee8105fa",
   {
     attribution:
-      '&copy; <a href="https://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     apikey: "01bcfb36ac6e47b392b2d57aee8105fa",
     maxZoom: 22,
   }
@@ -235,7 +235,7 @@ var mapbox = L.tileLayer(
   "https://tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=01bcfb36ac6e47b392b2d57aee8105fa",
   {
     attribution:
-      '&copy; <a href="https://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     apikey: "01bcfb36ac6e47b392b2d57aee8105fa",
     maxZoom: 22,
   }
@@ -503,7 +503,7 @@ map = L.map("map", {
   center: [16.046967909993068, 120.34169210507243],
   layers: [cartoLight, borders, markerClusters, highlight],
   zoomControl: false,
-  attributionControl: false,
+  // attributionControl: false,
 });
 
 // Layer control listeners that allow for a single markerClusters layer

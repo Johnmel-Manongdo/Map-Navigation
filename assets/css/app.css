@@ -369,16 +369,16 @@ input[type="checkbox"] {
 }
 
 #campusBtn {
-  height: 30px; /* easyButton's height default */
-  width: 30px; /*  easyButton's width default */
+  height: 26px; /* easyButton's height default */
+  width: 26px; /*  easyButton's width default */
   border: none;
   background-color: #ffffff;
   border-radius: 4px;
 }
 
 #removeBtn {
-  height: 30px; /* easyButton's height default */
-  width: 30px; /*  easyButton's width default */
+  height: 26px; /* easyButton's height default */
+  width: 26px; /*  easyButton's width default */
   border: none;
   background-color: #ffffff;
   border-radius: 4px;
