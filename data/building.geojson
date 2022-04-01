@@ -78,7 +78,7 @@
       "id": 4,
       "properties": {
         "NAME": "Engineering Building",
-        "PIC": "assets/img/eb_building.jpg",
+        "PIC": "assets/img/building_image/eb_building.jpg",
         "TEXT": "Description",
         "DESC": "Engineering building is a 3-storey building located in-between Faculty Center (right) and MBA Building (left). This building accommodate Engineering and Architecture Students.",
         "DESC_POI": "College of Engineering and Architecture Office (CEA)",
@@ -186,7 +186,7 @@
       "id": 10,
       "properties": {
         "NAME": "Store Area",
-        "PIC": "assets/img/upang.png",
+        "PIC": "assets/img/building_image/sa_building.jpg",
         "TEXT": "Description",
         "DESC": "Description here.......",
         "DESC_POI": "Xerox Area, School Supplies Store",
