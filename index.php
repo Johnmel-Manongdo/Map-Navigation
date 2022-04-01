@@ -253,15 +253,18 @@
                     </ul>
                     <div class="tab-content" id="aboutTabsContent">
                         <div class="tab-pane fade active in" id="about">
-                            <p style="margin: 20px;">
-                                PHINMA UPang is a fairly large campus with an estimated 12,000 students. New buildings
-                                are built to
-                                accommodate all of its student. This will result to relocation of some buildings and
-                                facilities. Thus, this
-                                confuse the students especially new-comers and visitors. This project was develop to
-                                help students, staff and
-                                visitors in navigating inside the main campus.
-                            </p>
+                            <div class="color-left">
+                                <p style="margin: 20px;">
+                                    PHINMA UPang is a fairly large campus with an estimated 12,000 students. New
+                                    buildings
+                                    are built to
+                                    accommodate all of its student. This will result to relocation of some buildings and
+                                    facilities. Thus, this
+                                    confuse the students especially new-comers and visitors. This project was develop to
+                                    help students, staff and
+                                    visitors in navigating inside the main campus.
+                                </p>
+                            </div>
                             <div class="panel panel-primary">
                                 <div class="panel-heading">Features</div>
                                 <ul class="list-group">
@@ -389,14 +392,26 @@
                         </div>
                         <div class="tab-pane fade in" id="team">
 
-                            <div class="container">
-                                <ul class="list-inline mx-auto justify-content-center">
-                                    <li class="list-inline-item">Johnmel Manongdo</li>
-                                    <li class="list-inline-item">James Stephen Biagtan</li>
-                                    <li class="list-inline-item">Joshua Arenas</li>
-                                    <li class="list-inline-item">Justin Laroza</li>
-                                    <li class="list-inline-item">Jerome Sison</li>
-                                    <li class="list-inline-item">Angelie Cuison</li>
+                            <div class="panel panel-primary">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        Johnmel Manongdo
+                                    </li>
+                                    <li class="list-group-item">
+                                        James Stephen Biagtan
+                                    </li>
+                                    <li class="list-group-item">
+                                        Joshua Arenas
+                                    </li>
+                                    <li class="list-group-item">
+                                        Justin Laroza
+                                    </li>
+                                    <li class="list-group-item">
+                                        Jerome Sison
+                                    </li>
+                                    <li class="list-group-item">
+                                        Angelie Cuison
+                                    </li>
                                 </ul>
                             </div>
 
@@ -735,5 +750,7 @@
     <script src="assets/js/path.js"></script>
 
 </body>
+
+</html>
 
 </html>
