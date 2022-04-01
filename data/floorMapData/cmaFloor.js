@@ -27,7 +27,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "Male CR",
       },
       geometry: {
         type: "Polygon",
@@ -46,7 +46,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "Female CR",
       },
       geometry: {
         type: "Polygon",
@@ -65,7 +65,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "CMA 101",
       },
       geometry: {
         type: "Polygon",
@@ -84,7 +84,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "CMA 102",
       },
       geometry: {
         type: "Polygon",
@@ -103,7 +103,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "CMA 103",
       },
       geometry: {
         type: "Polygon",
@@ -122,7 +122,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "CMA 104",
       },
       geometry: {
         type: "Polygon",
@@ -141,7 +141,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "1",
+        name: "CMA 105",
       },
       geometry: {
         type: "Polygon",
@@ -178,7 +178,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 210",
       },
       geometry: {
         type: "Polygon",
@@ -197,7 +197,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 208",
       },
       geometry: {
         type: "Polygon",
@@ -216,7 +216,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 209",
       },
       geometry: {
         type: "Polygon",
@@ -235,7 +235,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 211",
       },
       geometry: {
         type: "Polygon",
@@ -254,7 +254,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 213",
       },
       geometry: {
         type: "Polygon",
@@ -273,7 +273,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 207",
       },
       geometry: {
         type: "Polygon",
@@ -292,7 +292,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 205",
       },
       geometry: {
         type: "Polygon",
@@ -311,7 +311,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 214",
       },
       geometry: {
         type: "Polygon",
@@ -330,7 +330,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 212",
       },
       geometry: {
         type: "Polygon",
@@ -349,7 +349,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 2,
-        name: "1",
+        name: "CMA 206",
       },
       geometry: {
         type: "Polygon",
@@ -387,7 +387,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 310",
       },
       geometry: {
         type: "Polygon",
@@ -406,7 +406,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 308",
       },
       geometry: {
         type: "Polygon",
@@ -425,7 +425,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 309",
       },
       geometry: {
         type: "Polygon",
@@ -444,7 +444,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 311",
       },
       geometry: {
         type: "Polygon",
@@ -463,7 +463,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 313",
       },
       geometry: {
         type: "Polygon",
@@ -482,7 +482,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 307",
       },
       geometry: {
         type: "Polygon",
@@ -501,7 +501,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 305",
       },
       geometry: {
         type: "Polygon",
@@ -520,7 +520,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 314",
       },
       geometry: {
         type: "Polygon",
@@ -539,7 +539,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 312",
       },
       geometry: {
         type: "Polygon",
@@ -558,7 +558,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 3,
-        name: "1",
+        name: "CMA 306",
       },
       geometry: {
         type: "Polygon",
@@ -596,7 +596,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 410",
       },
       geometry: {
         type: "Polygon",
@@ -615,7 +615,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 408",
       },
       geometry: {
         type: "Polygon",
@@ -634,7 +634,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 409",
       },
       geometry: {
         type: "Polygon",
@@ -653,7 +653,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 411",
       },
       geometry: {
         type: "Polygon",
@@ -672,7 +672,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 413",
       },
       geometry: {
         type: "Polygon",
@@ -691,7 +691,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 407",
       },
       geometry: {
         type: "Polygon",
@@ -710,7 +710,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 405",
       },
       geometry: {
         type: "Polygon",
@@ -729,7 +729,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 414",
       },
       geometry: {
         type: "Polygon",
@@ -748,7 +748,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 412",
       },
       geometry: {
         type: "Polygon",
@@ -767,7 +767,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "CMA 406",
       },
       geometry: {
         type: "Polygon",

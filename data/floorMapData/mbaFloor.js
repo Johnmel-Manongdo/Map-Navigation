@@ -61,7 +61,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "3",
+        name: "MBA 105",
       },
       geometry: {
         type: "Polygon",
@@ -80,7 +80,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "4",
+        name: "MBA 106",
       },
       geometry: {
         type: "Polygon",
@@ -99,7 +99,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "5",
+        name: "MBA 107",
       },
       geometry: {
         type: "Polygon",
@@ -118,7 +118,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "6",
+        name: "MBA 108",
       },
       geometry: {
         type: "Polygon",
@@ -137,7 +137,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 1,
-        name: "7",
+        name: "MBA 109",
       },
       geometry: {
         type: "Polygon",
@@ -498,7 +498,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "1",
+        name: "MBA 405",
       },
       geometry: {
         type: "Polygon",
@@ -517,7 +517,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "3",
+        name: "MBA 406",
       },
       geometry: {
         type: "Polygon",
@@ -536,7 +536,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "4",
+        name: "MBA 407",
       },
       geometry: {
         type: "Polygon",
@@ -555,7 +555,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "5",
+        name: "MBA 408",
       },
       geometry: {
         type: "Polygon",
@@ -574,7 +574,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 4,
-        name: "6",
+        name: "MBA 409",
       },
       geometry: {
         type: "Polygon",
@@ -669,7 +669,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 5,
-        name: "3",
+        name: "MBA 406",
       },
       geometry: {
         type: "Polygon",
@@ -688,7 +688,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 5,
-        name: "4",
+        name: "MBA 407",
       },
       geometry: {
         type: "Polygon",
@@ -707,7 +707,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 5,
-        name: "5",
+        name: "MBA 408",
       },
       geometry: {
         type: "Polygon",
@@ -726,7 +726,7 @@ var geoJSON = {
       type: "Feature",
       properties: {
         level: 5,
-        name: "6",
+        name: "MBA 409",
       },
       geometry: {
         type: "Polygon",
