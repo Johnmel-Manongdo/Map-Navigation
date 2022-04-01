@@ -225,7 +225,7 @@ var cartoLight = L.tileLayer(
   "https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=01bcfb36ac6e47b392b2d57aee8105fa",
   {
     attribution:
-      '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      '&copy; <a href="https://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     apikey: "01bcfb36ac6e47b392b2d57aee8105fa",
     maxZoom: 22,
   }
@@ -235,7 +235,7 @@ var mapbox = L.tileLayer(
   "https://tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=01bcfb36ac6e47b392b2d57aee8105fa",
   {
     attribution:
-      '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      '&copy; <a href="https://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     apikey: "01bcfb36ac6e47b392b2d57aee8105fa",
     maxZoom: 22,
   }
@@ -274,7 +274,6 @@ var borders = L.geoJson(null, {
 $.getJSON("data/border.geojson", function (data) {
   borders.addData(data);
 });
-
 
 // building path
 var building_path = L.geoJson(null, {
@@ -597,7 +596,8 @@ var mainCampusBtn = L.easyButton(
   function () {
     map.setView([16.046967909993068, 120.34169210507243], 19);
   },
-  "Go back to main campus", "backBtn"
+  "Go back to main campus",
+  "backBtn"
 ).addTo(map);
 
 var button3d = L.easyButton(
@@ -605,7 +605,8 @@ var button3d = L.easyButton(
   function () {
     window.location.href = "newMap.html";
   },
-  "3D Map", "backBtn"
+  "3D Map",
+  "backBtn"
 ).addTo(map);
 
 /* Larger screens get expanded layer control and visible sidebar */
@@ -712,7 +713,7 @@ $(document).one("ajaxStop", function () {
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     remote: {
-      url: "http://api.geonames.org/searchJSON?username=bootleaf&featureClass=P&maxRows=5&countryCode=US&name_startsWith=%QUERY",
+      url: "https://api.geonames.org/searchJSON?username=bootleaf&featureClass=P&maxRows=5&countryCode=US&name_startsWith=%QUERY",
       filter: function (data) {
         return $.map(data.geonames, function (result) {
           return {
