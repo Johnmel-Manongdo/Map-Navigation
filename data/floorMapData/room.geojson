@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "NAME": "BE Room 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    }
+  ]
+}

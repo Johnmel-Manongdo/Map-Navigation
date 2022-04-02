@@ -4,7 +4,8 @@ var map,
   buildingSearch = [],
   foodSearch = [],
   parkingSearch = [],
-  gateSearch = [];
+  gateSearch = [],
+  roomSearch = [];
 
 $(window).resize(function () {
   sizeLayerControl();
@@ -497,6 +498,41 @@ $.getJSON("data/gates.geojson", function (data) {
   gates.addData(data);
 });
 
+var roomLayer = L.geoJson(null);
+var rooms = L.geoJson(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.icon({
+        iconUrl: "assets/img/gate.png",
+        iconSize: [28, 28],
+        iconAnchor: [12, 28],
+        popupAnchor: [0, -25],
+      }),
+      title: feature.properties.NAME,
+      riseOnHover: true,
+    });
+  },
+  onEachFeature: function (feature, layer) {
+    if (feature.properties) {
+      layer
+        .bindPopup(
+          "<p><b><center>" + feature.properties.NAME + "</center></b></p>"
+        )
+        .openPopup();
+      roomSearch.push({
+        name: layer.feature.properties.NAME,
+        source: "Rooms",
+        id: L.stamp(layer),
+        lat: layer.feature.geometry.coordinates[1],
+        lng: layer.feature.geometry.coordinates[0],
+      });
+    }
+  },
+});
+$.getJSON("data/floorMapData/room.geojson", function (data) {
+  rooms.addData(data);
+});
+
 // initialize map
 map = L.map("map", {
   zoom: 19,
@@ -707,6 +743,16 @@ $(document).one("ajaxStop", function () {
     limit: 10,
   });
 
+   var roomsBH = new Bloodhound({
+     name: "Rooms",
+     datumTokenizer: function (d) {
+       return Bloodhound.tokenizers.whitespace(d.name);
+     },
+     queryTokenizer: Bloodhound.tokenizers.whitespace,
+     local: roomSearch,
+     limit: 10,
+   });
+
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
     datumTokenizer: function (d) {
@@ -754,6 +800,7 @@ $(document).one("ajaxStop", function () {
   parkingsBH.initialize();
   foodsBH.initialize();
   gatesBH.initialize();
+  roomsBH.initialize();
   geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
@@ -813,6 +860,18 @@ $(document).one("ajaxStop", function () {
         },
       },
       {
+        name: "Rooms",
+        displayKey: "name",
+        source: roomsBH.ttAdapter(),
+        templates: {
+          header:
+            "<h4 class='typeahead-header'><img src='assets/img/gate.png' width='28' height='28'>&nbsp;Rooms</h4>",
+          suggestion: Handlebars.compile(
+            ["{{name}}<br>&nbsp;<small>{{address}}</small>"].join("")
+          ),
+        },
+      },
+      {
         name: "GeoNames",
         displayKey: "name",
         source: geonamesBH.ttAdapter(),
@@ -859,6 +918,15 @@ $(document).one("ajaxStop", function () {
           map._layers[datum.id].fire("click");
         }
       }
+       if (datum.source === "Rooms") {
+         if (!map.hasLayer(gateLayer)) {
+           map.addLayer(gateLayer);
+         }
+         map.setView([datum.lat, datum.lng], 20);
+         if (map._layers[datum.id]) {
+           map._layers[datum.id].fire("click");
+         }
+       }
       if (datum.source === "GeoNames") {
         map.setView([datum.lat, datum.lng], 14);
       }
