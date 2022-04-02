@@ -943,8 +943,8 @@ $(document).one("ajaxStop", function () {
         }
       }
       if (datum.source === "Rooms") {
-        if (!map.hasLayer(gateLayer)) {
-          map.addLayer(gateLayer);
+        if (!map.hasLayer(roomLayer)) {
+          map.addLayer(roomLayer);
         }
         map.setView([datum.lat, datum.lng], 20);
         if (map._layers[datum.id]) {
