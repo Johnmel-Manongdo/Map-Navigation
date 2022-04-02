@@ -4,7 +4,8 @@ var map,
   buildingSearch = [],
   foodSearch = [],
   parkingSearch = [],
-  gateSearch = [];
+  gateSearch = [],
+  gymSearch = [];
 
 $(window).resize(function () {
   sizeLayerControl();
@@ -497,6 +498,36 @@ $.getJSON("data/gates.geojson", function (data) {
   gates.addData(data);
 });
 
+var gymFloorLayer = L.geoJson(null);
+var gyms = L.geoJson(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.icon({
+        iconUrl: "assets/img/gate.png",
+        iconSize: [28, 28],
+        iconAnchor: [12, 28],
+        popupAnchor: [0, -25],
+      }),
+      title: feature.properties.name,
+      riseOnHover: true,
+    });
+  },
+  onEachFeature: function (feature, layer) {
+    if (feature.properties) {
+      gymSearch.push({
+        name: layer.feature.properties.name,
+        source: "Gyms",
+        id: L.stamp(layer),
+        lat: layer.feature.geometry.coordinates[1],
+        lng: layer.feature.geometry.coordinates[0],
+      });
+    }
+  },
+});
+$.getJSON("data/floorMapData/gymFloor.geojson", function (data) {
+  gyms.addData(data);
+});
+
 // initialize map
 map = L.map("map", {
   zoom: 19,
@@ -707,6 +738,16 @@ $(document).one("ajaxStop", function () {
     limit: 10,
   });
 
+  var gymsBH = new Bloodhound({
+    name: "Gyms",
+    datumTokenizer: function (d) {
+      return Bloodhound.tokenizers.whitespace(d.name);
+    },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: gymSearch,
+    limit: 10,
+  });
+
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
     datumTokenizer: function (d) {
@@ -754,6 +795,7 @@ $(document).one("ajaxStop", function () {
   parkingsBH.initialize();
   foodsBH.initialize();
   gatesBH.initialize();
+  gymsBH.initialize();
   geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
@@ -813,6 +855,18 @@ $(document).one("ajaxStop", function () {
         },
       },
       {
+        name: "Gyms",
+        displayKey: "name",
+        source: gatesBH.ttAdapter(),
+        templates: {
+          header:
+            "<h4 class='typeahead-header'><img src='assets/img/gate.png' width='28' height='28'>&nbsp;Gates</h4>",
+          suggestion: Handlebars.compile(
+            ["{{name}}<br>&nbsp;<small>{{address}}</small>"].join("")
+          ),
+        },
+      },
+      {
         name: "GeoNames",
         displayKey: "name",
         source: geonamesBH.ttAdapter(),
@@ -853,6 +907,15 @@ $(document).one("ajaxStop", function () {
       if (datum.source === "Gates") {
         if (!map.hasLayer(gateLayer)) {
           map.addLayer(gateLayer);
+        }
+        map.setView([datum.lat, datum.lng], 20);
+        if (map._layers[datum.id]) {
+          map._layers[datum.id].fire("click");
+        }
+      }
+      if (datum.source === "Gyms") {
+        if (!map.hasLayer(gymFloorLayer)) {
+          map.addLayer(gymFloorLayer);
         }
         map.setView([datum.lat, datum.lng], 20);
         if (map._layers[datum.id]) {
