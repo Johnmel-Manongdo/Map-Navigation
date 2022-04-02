@@ -532,7 +532,15 @@ var rooms = L.geoJson(null, {
     if (feature.properties) {
       layer
         .bindPopup(
-          "<p><b><center>" + feature.properties.NAME + "</center></b></p>"
+          "<p>Building: " +
+            feature.properties.BUILDING +
+            "</p>" +
+            "<p>Room: " +
+            feature.properties.NAME +
+            "</p>" +
+            "<p>Floor: " +
+            feature.properties.LEVEL +
+            "</p>"
         )
         .openPopup();
       roomSearch.push({

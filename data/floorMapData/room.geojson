@@ -5,7 +5,9 @@
       "type": "Feature",
       "id": 0,
       "properties": {
-        "NAME": "BE Room 1"
+        "BUILDING": "BE Building",
+        "NAME": "BE Room 1",
+        "LEVEL": "1"
       },
       "geometry": {
         "type": "Point",
