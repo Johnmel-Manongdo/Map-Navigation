@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "level": 1,
+        "name": "GSD Office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [120.341717118253641, 16.046558011433504]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "level": 1,
+        "name": "Security Office"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [120.341664161430259, 16.046532534532105]
+      }
+    }
+  ]
+}

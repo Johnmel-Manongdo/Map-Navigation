@@ -4,7 +4,8 @@ var map,
   buildingSearch = [],
   foodSearch = [],
   parkingSearch = [],
-  gateSearch = [];
+  gateSearch = [],
+  gymSearch = [];
 
 $(window).resize(function () {
   sizeLayerControl();
@@ -381,12 +382,22 @@ var buildings = L.geoJson(null, {
         lat: layer.feature.geometry.coordinates[1],
         lng: layer.feature.geometry.coordinates[0],
       });
+      gymSearch.push({
+        name: layer.feature.properties.name,
+        source: "Gyms",
+        id: L.stamp(layer),
+        lat: layer.feature.geometry.coordinates[1],
+        lng: layer.feature.geometry.coordinates[0],
+      });
     }
   },
 });
 $.getJSON("data/building.geojson", function (data) {
   buildings.addData(data);
   map.addLayer(buildingLayer);
+});
+$.getJSON("data/floorMapData/gymFloor.geojson", function (data) {
+  buildings.addData(data);
 });
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove parkings to markerClusters layer */
