@@ -362,10 +362,10 @@ input[type="checkbox"] {
   }
 }
 
-.img-responsive {
+/* .img-responsive {
   width: 100%;
   height: auto;
-}
+} */
 
 /* @media (max-width: 767px) {
   .img-responsive {
