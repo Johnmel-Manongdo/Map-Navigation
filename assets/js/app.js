@@ -857,10 +857,10 @@ $(document).one("ajaxStop", function () {
       {
         name: "Gyms",
         displayKey: "name",
-        source: gatesBH.ttAdapter(),
+        source: gymsBH.ttAdapter(),
         templates: {
           header:
-            "<h4 class='typeahead-header'><img src='assets/img/gate.png' width='28' height='28'>&nbsp;Gates</h4>",
+            "<h4 class='typeahead-header'><img src='assets/img/gate.png' width='28' height='28'>&nbsp;Gyms</h4>",
           suggestion: Handlebars.compile(
             ["{{name}}<br>&nbsp;<small>{{address}}</small>"].join("")
           ),
