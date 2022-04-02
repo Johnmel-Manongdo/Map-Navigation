@@ -693,6 +693,7 @@ var groupedOverlays = {
     // "<img src='assets/img/museum.png' width='24' height='28'>&nbsp;Foods":
     "&nbspFoods": foodLayer,
     "&nbspGates": gateLayer,
+    "&nbspRooms": roomLayer,
   },
   References: {
     "&nbspCampus Border": borders,
