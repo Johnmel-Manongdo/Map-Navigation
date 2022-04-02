@@ -362,10 +362,9 @@ input[type="checkbox"] {
   }
 }
 
-.img-responsive-height {
-  display: block;
-  width: auto;
-  max-height: 100%;
+.img-responsive {
+  height: auto;
+  width: 100%;
 }
 
 #campusBtn {
