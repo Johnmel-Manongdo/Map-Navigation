@@ -363,16 +363,16 @@ input[type="checkbox"] {
 }
 
 .img-responsive {
-  /* height: auto;
-  width: 100%; */
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .img-responsive {
     width: 10px;
     height: 10px;
   }
-}
+} */
 
 #campusBtn {
   height: 26px; /* easyButton's height default */

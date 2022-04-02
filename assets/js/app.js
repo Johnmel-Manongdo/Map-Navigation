@@ -359,7 +359,7 @@ var buildings = L.geoJson(null, {
           $("#description-pic").html(
             "<div class='img-responsive'>'<center><img src='" +
               feature.properties.PIC +
-              "' style='width:100px;height:150px;'></img></center></div>"
+              "' style='width:500px;height:350px;'></img></center></div>"
           );
           $("#description-text").html(feature.properties.DESC);
           $("#description-poi-1").html(feature.properties.DESC_POI);
