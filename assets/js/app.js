@@ -211,6 +211,22 @@ function syncSidebar() {
     }
   });
 
+  rooms.eachLayer(function (layer) {
+    if (map.hasLayer(roomLayer)) {
+      $("#feature-list tbody").append(
+        '<tr class="feature-row" id="' +
+          L.stamp(layer) +
+          '" lat="' +
+          layer.getLatLng().lat +
+          '" lng="' +
+          layer.getLatLng().lng +
+          '"><td style="vertical-align: middle;"><img width="18" height="18" src="assets/img/gate.png"></td><td class="feature-name">' +
+          layer.feature.properties.NAME +
+          '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>'
+      );
+    }
+  });
+
   /* Update list.js featureList */
   featureList = new List("features", {
     valueNames: ["feature-name"],
@@ -560,6 +576,10 @@ map.on("overlayadd", function (e) {
     markerClusters.addLayer(gates);
     syncSidebar();
   }
+  if (e.layer === roomLayer) {
+    markerClusters.addLayer(rooms);
+    syncSidebar();
+  }
 });
 
 map.on("overlayremove", function (e) {
@@ -577,6 +597,10 @@ map.on("overlayremove", function (e) {
   }
   if (e.layer === gateLayer) {
     markerClusters.removeLayer(gates);
+    syncSidebar();
+  }
+  if (e.layer === roomLayer) {
+    markerClusters.removeLayer(rooms);
     syncSidebar();
   }
 });
@@ -743,15 +767,15 @@ $(document).one("ajaxStop", function () {
     limit: 10,
   });
 
-   var roomsBH = new Bloodhound({
-     name: "Rooms",
-     datumTokenizer: function (d) {
-       return Bloodhound.tokenizers.whitespace(d.name);
-     },
-     queryTokenizer: Bloodhound.tokenizers.whitespace,
-     local: roomSearch,
-     limit: 10,
-   });
+  var roomsBH = new Bloodhound({
+    name: "Rooms",
+    datumTokenizer: function (d) {
+      return Bloodhound.tokenizers.whitespace(d.name);
+    },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: roomSearch,
+    limit: 10,
+  });
 
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
@@ -918,15 +942,15 @@ $(document).one("ajaxStop", function () {
           map._layers[datum.id].fire("click");
         }
       }
-       if (datum.source === "Rooms") {
-         if (!map.hasLayer(gateLayer)) {
-           map.addLayer(gateLayer);
-         }
-         map.setView([datum.lat, datum.lng], 20);
-         if (map._layers[datum.id]) {
-           map._layers[datum.id].fire("click");
-         }
-       }
+      if (datum.source === "Rooms") {
+        if (!map.hasLayer(gateLayer)) {
+          map.addLayer(gateLayer);
+        }
+        map.setView([datum.lat, datum.lng], 20);
+        if (map._layers[datum.id]) {
+          map._layers[datum.id].fire("click");
+        }
+      }
       if (datum.source === "GeoNames") {
         map.setView([datum.lat, datum.lng], 14);
       }
