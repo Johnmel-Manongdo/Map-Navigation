@@ -701,16 +701,13 @@ var groupedOverlays = {
     // "<img src='assets/img/museum.png' width='24' height='28'>&nbsp;Foods":
     "&nbspFoods": foodLayer,
     "&nbspGates": gateLayer,
-    "&nbspRooms": roomLayer,
+    // "&nbspRooms": roomLayer,
   },
   References: {
     "&nbspCampus Border": borders,
     // "&nbspBuilding Border": building_borders,
   },
 };
-
-var lc = document.getElementsByClassName("leaflet-control-layers");
-lc[4].style.visibility = "hidden";
 
 var layerControl = L.control
   .groupedLayers(baseLayers, groupedOverlays, {
