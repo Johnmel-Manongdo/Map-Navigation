@@ -362,11 +362,17 @@ input[type="checkbox"] {
   }
 }
 
-.img-responsive-height {
-  display: block;
-  width: auto;
-  max-height: 100%;
-}
+/* .img-responsive {
+  width: 100%;
+  height: auto;
+} */
+
+/* @media (max-width: 767px) {
+  .img-responsive {
+    width: 10px;
+    height: 10px;
+  }
+} */
 
 #campusBtn {
   height: 26px; /* easyButton's height default */
