@@ -4,8 +4,7 @@ var map,
   buildingSearch = [],
   foodSearch = [],
   parkingSearch = [],
-  gateSearch = [],
-  roomSearch = [];
+  gateSearch = [];
 
 $(window).resize(function () {
   sizeLayerControl();
@@ -708,16 +707,6 @@ $(document).one("ajaxStop", function () {
     limit: 10,
   });
 
-  var roomsBH = new Bloodhound({
-    name: "Rooms",
-    datumTokenizer: function (d) {
-      return Bloodhound.tokenizers.whitespace(d.name);
-    },
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    local: roomSearch,
-    limit: 10,
-  });
-
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
     datumTokenizer: function (d) {
@@ -765,7 +754,6 @@ $(document).one("ajaxStop", function () {
   parkingsBH.initialize();
   foodsBH.initialize();
   gatesBH.initialize();
-  roomsBH.initialize();
   geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
@@ -825,18 +813,6 @@ $(document).one("ajaxStop", function () {
         },
       },
       {
-        name: "Rooms",
-        displayKey: "name",
-        source: roomsBH.ttAdapter(),
-        templates: {
-          header:
-            "<h4 class='typeahead-header'><img src='assets/img/gate.png' width='28' height='28'>&nbsp;Rooms</h4>",
-          suggestion: Handlebars.compile(
-            ["{{name}}<br>&nbsp;<small>{{address}}</small>"].join("")
-          ),
-        },
-      },
-      {
         name: "GeoNames",
         displayKey: "name",
         source: geonamesBH.ttAdapter(),
@@ -878,12 +854,6 @@ $(document).one("ajaxStop", function () {
         if (!map.hasLayer(gateLayer)) {
           map.addLayer(gateLayer);
         }
-        map.setView([datum.lat, datum.lng], 20);
-        if (map._layers[datum.id]) {
-          map._layers[datum.id].fire("click");
-        }
-      }
-      if (datum.source === "Rooms") {
         map.setView([datum.lat, datum.lng], 20);
         if (map._layers[datum.id]) {
           map._layers[datum.id].fire("click");
