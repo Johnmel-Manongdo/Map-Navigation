@@ -17,8 +17,9 @@ function getGeojsonPath() {
             "<div class='card' style='width: 18rem;'>" +
               "<div class='card-body'>" +
               "<p class='card-text banner-left'>" +
-              "<strong>Distance: </strong>128.24 meters" +
+              "<strong>Distance:</strong>" +
               "</p>" +
+              "<p>128.24 meters</p>" +
               "<p class='card-text banner-left'>" +
               "<strong>Ave. Walking Time: </strong>2 minutes & 20 seconds" +
               "</p>" +
