@@ -11,7 +11,12 @@ function getGeojsonPath() {
       if (map.hasLayer(building_path)) {
         building_path.clearLayers();
       } else {
-        building_path.addTo(map).bindPopup("test1");
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><strong>Distance: </strong> 128.24 m</p>" +
+              "<p>Average Walking Time: 1 minute</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
@@ -1451,3 +1456,7 @@ function getGeojsonPath() {
     });
   }
 }
+
+function getAverageWalkingTime() {}
+
+function getAverageRunningTime() {}
