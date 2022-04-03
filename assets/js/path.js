@@ -18,7 +18,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />" +
+              getDistanceInMeters(0.128238, 1000) +
+              "</p>" +
               "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />" +
               getAverageWalkingTime() +
               "</p>" +
@@ -2493,15 +2495,9 @@ function getGeojsonPath() {
   }
 }
 
-function getDistanceInMeters() {
-  var meters = L.geoJson(null, {
-    onEachFeature: function (feature, layer) {
-      feature.properties.km;
-    },
-  });
-  $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
-    meters.addData(data);
-  });
+function getDistanceInMeters(km, m) {
+  let meters = km * m;
+  return meters;
 }
 
 function getAverageWalkingTime() {
