@@ -1,3 +1,8 @@
+function getDistanceInMeters(km, m) {
+  let meters = km * m;
+  return meters;
+}
+
 function getGeojsonPath() {
   var start = document.getElementById("startingArea").value;
   var finish = document.getElementById("destinationArea").value;
@@ -20,7 +25,7 @@ function getGeojsonPath() {
             "<div style='width: 15rem'>" +
               "<p class='banner-left'><strong>Distance: </strong><br />" +
               getDistanceInMeters(0.128238, 1000) +
-              "</p>" +
+              " meters</p>" +
               "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />" +
               getAverageWalkingTime() +
               "</p>" +
@@ -45,9 +50,13 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />23.65 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />0 minute & 15 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 8 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />" +
+              getDistanceInMeters(0.023651, 1000) +
+              " meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />" +
+              getAverageWalkingTime() +
+              "</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -2493,11 +2502,6 @@ function getGeojsonPath() {
       building_path.openPopup();
     });
   }
-}
-
-function getDistanceInMeters(km, m) {
-  let meters = km * m;
-  return meters;
 }
 
 function getAverageWalkingTime() {
