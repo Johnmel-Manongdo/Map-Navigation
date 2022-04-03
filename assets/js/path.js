@@ -11,12 +11,20 @@ function getGeojsonPath() {
       if (map.hasLayer(building_path)) {
         building_path.clearLayers();
       } else {
-        building_path
-          .addTo(map)
-          .bindPopup(
-            "<div class='box'><p><strong>Distance: </strong> 128.24 m</p></div>" +
-              "<p>Average Walking Time: 1 minute</p>"
-          );
+        building_path.addTo(map).bindPopup(
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+        );
         removePathBtn();
       }
       building_path.addData(data);
