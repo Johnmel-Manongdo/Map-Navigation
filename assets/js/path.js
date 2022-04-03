@@ -29,7 +29,13 @@ function getGeojsonPath() {
       if (map.hasLayer(building_path)) {
         building_path.clearLayers();
       } else {
-        building_path.addTo(map).bindPopup("test2");
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
@@ -41,12 +47,20 @@ function getGeojsonPath() {
     (start == "CHS Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-chs-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -54,12 +68,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -67,12 +89,20 @@ function getGeojsonPath() {
     (start == "Engineerin Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -80,12 +110,20 @@ function getGeojsonPath() {
     (start == "Forest Area" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-fa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -93,12 +131,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -106,12 +152,20 @@ function getGeojsonPath() {
     (start == "UPang Gymnasium" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-gym-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -119,12 +173,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -132,12 +194,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -145,12 +215,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -158,12 +236,20 @@ function getGeojsonPath() {
     (start == "Student Plaza" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-sp-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -176,12 +262,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -189,12 +283,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -202,12 +304,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -215,12 +325,20 @@ function getGeojsonPath() {
     (start == "Forest Area" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-fa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -228,12 +346,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -241,12 +367,20 @@ function getGeojsonPath() {
     (start == "UPang Gymnasium" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-gym-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -254,12 +388,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -267,12 +409,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -280,12 +430,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -293,12 +451,20 @@ function getGeojsonPath() {
     (start == "Student Plaza" && finish == "CHS Building")
   ) {
     $.getJSON("data/pathData/chs/chs-sp-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -311,12 +477,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "CMA Building")
   ) {
     $.getJSON("data/pathData/cma/cma-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -324,12 +498,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "CMA Building")
   ) {
     $.getJSON("data/pathData/cma/cma-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -342,12 +524,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "Engineering Building")
   ) {
     $.getJSON("data/pathData/eb/eb-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -355,12 +545,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "Engineering Building")
   ) {
     $.getJSON("data/pathData/eb/eb-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -368,12 +566,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "Engineering Building")
   ) {
     $.getJSON("data/pathData/eb/eb-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -381,12 +587,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "Engineering Building")
   ) {
     $.getJSON("data/pathData/eb/eb-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -394,12 +608,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "Engineering Building")
   ) {
     $.getJSON("data/pathData/eb/eb-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -412,12 +634,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "Forest Area")
   ) {
     $.getJSON("data/pathData/fa/fa-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -425,12 +655,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "Forest Area")
   ) {
     $.getJSON("data/pathData/fa/fa-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -438,12 +676,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "Forest Area")
   ) {
     $.getJSON("data/pathData/fa/fa-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -451,12 +697,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "Forest Area")
   ) {
     $.getJSON("data/pathData/fa/fa-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -464,12 +718,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "Forest Area")
   ) {
     $.getJSON("data/pathData/fa/fa-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -477,12 +739,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "Forest Area")
   ) {
     $.getJSON("data/pathData/fa/fa-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -490,12 +760,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "Forest Area")
   ) {
     $.getJSON("data/pathData/fa/fa-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -508,12 +786,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "Faculty Center")
   ) {
     $.getJSON("data/pathData/fc/fc-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -521,12 +807,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "Faculty Center")
   ) {
     $.getJSON("data/pathData/fc/fc-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -534,12 +828,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "Faculty Center")
   ) {
     $.getJSON("data/pathData/fc/fc-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -547,12 +849,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "Faculty Center")
   ) {
     $.getJSON("data/pathData/fc/fc-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -568,12 +878,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -581,12 +899,20 @@ function getGeojsonPath() {
     (start == "BE Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-be-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -594,12 +920,20 @@ function getGeojsonPath() {
     (start == "CHS Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-chs-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -607,12 +941,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -620,12 +962,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -633,12 +983,20 @@ function getGeojsonPath() {
     (start == "Forest Area" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-fa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -646,12 +1004,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -659,12 +1025,20 @@ function getGeojsonPath() {
     (start == "UPang Gymnasium" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-gym-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -672,12 +1046,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -685,12 +1067,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -698,12 +1088,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -711,12 +1109,20 @@ function getGeojsonPath() {
     (start == "Student Plaza" && finish == "Administration Building")
   ) {
     $.getJSON("data/pathData/fvr/fvr-sp-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -729,12 +1135,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -742,12 +1156,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -755,12 +1177,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -768,12 +1198,20 @@ function getGeojsonPath() {
     (start == "Forest Area" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-fa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -781,12 +1219,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -794,12 +1240,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -807,12 +1261,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -820,12 +1282,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -833,12 +1303,20 @@ function getGeojsonPath() {
     (start == "Student Plaza" && finish == "UPang Gymnasium")
   ) {
     $.getJSON("data/pathData/gym/gym-sp-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -851,12 +1329,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -864,12 +1350,20 @@ function getGeojsonPath() {
     (start == "BE Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-be-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -877,12 +1371,20 @@ function getGeojsonPath() {
     (start == "CHS Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-chs-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -890,12 +1392,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -903,12 +1413,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -916,12 +1434,20 @@ function getGeojsonPath() {
     (start == "Forest Area" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-fa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -929,12 +1455,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -942,12 +1476,20 @@ function getGeojsonPath() {
     (start == "Administration Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-fvr-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -955,12 +1497,20 @@ function getGeojsonPath() {
     (start == "UPang Gymnasium" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-gym-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -968,12 +1518,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -981,12 +1539,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -994,12 +1560,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1007,12 +1581,20 @@ function getGeojsonPath() {
     (start == "Student Plaza" && finish == "ITS Building")
   ) {
     $.getJSON("data/pathData/itc/itc-sp-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -1025,12 +1607,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "MBA Building")
   ) {
     $.getJSON("data/pathData/mba/mba-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1038,12 +1628,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "MBA Building")
   ) {
     $.getJSON("data/pathData/mba/mba-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1051,12 +1649,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "MBA Building")
   ) {
     $.getJSON("data/pathData/mba/mba-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1064,12 +1670,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "MBA Building")
   ) {
     $.getJSON("data/pathData/mba/mba-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1077,12 +1691,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "MBA Building")
   ) {
     $.getJSON("data/pathData/mba/mba-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1090,12 +1712,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "MBA Building")
   ) {
     $.getJSON("data/pathData/mba/mba-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -1108,12 +1738,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "NH Building")
   ) {
     $.getJSON("data/pathData/nh/nh-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1121,12 +1759,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "NH Building")
   ) {
     $.getJSON("data/pathData/nh/nh-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1134,12 +1780,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "NH Building")
   ) {
     $.getJSON("data/pathData/nh/nh-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -1152,12 +1806,20 @@ function getGeojsonPath() {
     (start == "AB Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1165,12 +1827,20 @@ function getGeojsonPath() {
     (start == "BE Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-be-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1178,12 +1848,20 @@ function getGeojsonPath() {
     (start == "CHS Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-chs-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1191,12 +1869,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1204,12 +1890,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1217,12 +1911,20 @@ function getGeojsonPath() {
     (start == "Forest Area" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-fa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1230,12 +1932,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1243,12 +1953,20 @@ function getGeojsonPath() {
     (start == "Administration Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-fvr-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1256,12 +1974,20 @@ function getGeojsonPath() {
     (start == "UPang Gymnasium" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-gym-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1269,12 +1995,20 @@ function getGeojsonPath() {
     (start == "ITS Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-itc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1282,12 +2016,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1295,12 +2037,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1308,12 +2058,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1321,12 +2079,20 @@ function getGeojsonPath() {
     (start == "Student Plaza" && finish == "PTC Building")
   ) {
     $.getJSON("data/pathData/ptc/ptc-sp-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -1339,12 +2105,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "Store Area")
   ) {
     $.getJSON("data/pathData/sa/sa-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 
@@ -1357,12 +2131,20 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1370,12 +2152,20 @@ function getGeojsonPath() {
     (start == "CMA Building" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-cma-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1383,12 +2173,20 @@ function getGeojsonPath() {
     (start == "Engineering Building" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-eb-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1396,12 +2194,20 @@ function getGeojsonPath() {
     (start == "Forest Area" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-fa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1409,12 +2215,20 @@ function getGeojsonPath() {
     (start == "Faculty Center" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-fc-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1422,12 +2236,20 @@ function getGeojsonPath() {
     (start == "MBA Building" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-mba-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1435,12 +2257,20 @@ function getGeojsonPath() {
     (start == "NH Building" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-nh-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
   if (
@@ -1448,12 +2278,20 @@ function getGeojsonPath() {
     (start == "Store Area" && finish == "Student Plaza")
   ) {
     $.getJSON("data/pathData/sp/sp-sa-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) building_path.clearLayers();
-      else {
-        building_path.addTo(map);
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
+      } else {
+        building_path
+          .addTo(map)
+          .bindPopup(
+            "<p><i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p><i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p><i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>"
+          );
         removePathBtn();
       }
       building_path.addData(data);
+      building_path.openPopup();
     });
   }
 }
