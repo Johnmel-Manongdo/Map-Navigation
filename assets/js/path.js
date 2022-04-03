@@ -6,7 +6,10 @@ function getGeojsonPath() {
   if (start == "BE Building" && finish == "BE Building") {
     building_path.clearLayers();
   }
-  if (start == "BE Building" && finish == "Automotive Building") {
+  if (
+    (start == "BE Building" && finish == "Automotive Building") ||
+    (start == "Automotive Building" && finish == "BE Building")
+  ) {
     $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
       if (map.hasLayer(building_path)) {
         building_path.clearLayers();
@@ -16,28 +19,8 @@ function getGeojsonPath() {
           .bindPopup(
             "<div style='width: 15rem'>" +
               "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
-              "</div>"
-          );
-        removePathBtn();
-      }
-      building_path.addData(data);
-      building_path.openPopup();
-    });
-  }
-  if (start == "Automotive Building" && finish == "BE Building") {
-    $.getJSON("data/pathData/be/ab-be-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) {
-        building_path.clearLayers();
-      } else {
-        building_path
-          .addTo(map)
-          .bindPopup(
-            "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />getAverageWalkingTime()</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -58,9 +41,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />23.65 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />0 minute & 15 seconds</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 8 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -81,9 +64,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />98.78 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 3 second</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 32 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -94,7 +77,7 @@ function getGeojsonPath() {
   }
   if (
     (start == "BE Building" && finish == "Engineering Building") ||
-    (start == "Engineerin Building" && finish == "BE Building")
+    (start == "Engineering Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-eb-path.geojson", function (data) {
       if (map.hasLayer(building_path)) {
@@ -104,9 +87,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />90.29 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />0 minute & 58 seconds</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 29 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -127,9 +110,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />91.98 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />0 minute & 59 seconds</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 29 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -150,9 +133,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />114.84 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 13 seconds</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 37 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -173,9 +156,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />56.10 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />0 minute & 36 seconds</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 18 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -196,9 +179,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />104.46 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 7 seconds</p>" +
+              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 33 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -219,8 +202,8 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds</p>" +
+              "<p class='banner-left'><strong>Distance: </strong><br />108.53 meters</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 9 seconds</p>" +
               "<p class='banner-left'><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds</p>" +
               "</div>"
           );
@@ -2508,6 +2491,19 @@ function getGeojsonPath() {
   }
 }
 
-function getAverageWalkingTime() {}
+function getDistanceInMeters() {
+  var meters = L.geoJson(null, {
+    onEachFeature: function (feature, layer) {
+      feature.properties.km;
+    },
+  });
+  $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
+    meters.addData(data);
+  });
+}
+
+function getAverageWalkingTime() {
+  getDistanceInMeters();
+}
 
 function getAverageRunningTime() {}
