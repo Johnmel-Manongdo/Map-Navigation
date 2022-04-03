@@ -393,9 +393,9 @@ input[type="checkbox"] {
 .banner-left {
   background-color: rgba(177, 99, 163, 0.09);
   font-size: 1em;
-  margin: 10px 0;
-  padding: 10px;
-  border-width: 1px 1px 1px 10px;
+  margin: 5px 0;
+  padding: 5px;
+  border-width: 1px 1px 1px 5px;
   border-left-style: solid;
   border-color: #6c757d #6c757d #6c757d #28a745;
 }
