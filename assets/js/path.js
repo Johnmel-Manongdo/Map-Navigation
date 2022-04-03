@@ -23,7 +23,7 @@ function getGeojsonPath() {
               "<strong>Ave. Walking Time: </strong>2 minutes & 20 seconds" +
               "</p>" +
               "<p class='card-text'>" +
-              "<stong>Ave. Running Time: </strong>1 minutes & 20 seconds" +
+              "<stong>Ave. Running Time: </strong>1 minutes & 10 seconds" +
               "</p>" +
               "<a href='#' class='btn btn-success' style='color: white'>" +
               "View" +
