@@ -6,7 +6,7 @@
       "properties": {
         "START": "Basic Education Building",
         "END": "Automotive Building",
-        "DISTANCE": 0.128238
+        "km": 0.128238
       },
       "geometry": {
         "type": "LineString",
