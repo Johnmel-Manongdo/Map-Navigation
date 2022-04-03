@@ -19,7 +19,9 @@ function getGeojsonPath() {
           .bindPopup(
             "<div style='width: 15rem'>" +
               "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />getAverageWalkingTime()</p>" +
+              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />" +
+              getAverageWalkingTime() +
+              "</p>" +
               "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
               "</div>"
           );
