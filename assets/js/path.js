@@ -17,13 +17,13 @@ function getGeojsonPath() {
             "<div class='card' style='width: 18rem;'>" +
               "<div class='card-body'>" +
               "<p class='card-text banner-left'>" +
-              "<i class='fa-regular fa-road'></i><strong>Distance: </strong><br />128.24 meters" +
+              "<i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters" +
               "</p>" +
               "<p class='card-text banner-left'>" +
-              "<i class='fa-regular fa-person-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds" +
+              "<i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds" +
               "</p>" +
               "<p class='card-text banner-left'>" +
-              "<i class='fa-regular fa-person-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds" +
+              "<i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds" +
               "</p>" +
               "</div>" +
               "</div>"
