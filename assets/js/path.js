@@ -14,20 +14,15 @@ function getGeojsonPath() {
         building_path
           .addTo(map)
           .bindPopup(
-            "<div class='card' style='width: 18rem;'>" +
-              "<div class='card-body'>" +
-              "<i class='far fa-road'></i>" +
-              "<p class='card-text banner-left'>" +
-              "<strong>Distance: </strong><br />128.24 meters" +
+            "<p>" +
+              "<i class='far fa-road'></i><strong>Distance: </strong><br />128.24 meters" +
               "</p>" +
-              "<p class='card-text banner-left'>" +
+              "<p>" +
               "<i class='far fa-walking'></i><strong>Ave. Walking Time: </strong><br />2 minutes & 20 seconds" +
               "</p>" +
-              "<p class='card-text banner-left'>" +
+              "<p>" +
               "<i class='far fa-running'></i><strong>Ave. Running Time: </strong><br />1 minutes & 10 seconds" +
-              "</p>" +
-              "</div>" +
-              "</div>"
+              "</p>"
           );
         removePathBtn();
       }
