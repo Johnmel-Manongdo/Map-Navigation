@@ -16,12 +16,17 @@ function getGeojsonPath() {
           .bindPopup(
             "<div class='card' style='width: 18rem;'>" +
               "<div class='card-body'>" +
-              "<h5 class='card-title'>Special title treatment</h5>" +
               "<p class='card-text'>" +
-              "With supporting text below as a natural lead-in to additional content." +
+              "<strong>Distance: </strong>128.24 meters" +
               "</p>" +
-              "<a href='#' class='btn btn-primary'>" +
-              "Go somewhere" +
+              "<p class='card-text'>" +
+              "<strong>Ave. Walking Time: </strong>2 minutes & 20 seconds" +
+              "</p>" +
+              "<p class='card-text'>" +
+              "<stong>Ave. Running Time: </strong>1 minutes & 20 seconds" +
+              "</p>" +
+              "<a href='#' class='btn btn-success' style='color: white'>" +
+              "View" +
               "</a>" +
               "</div>" +
               "</div>"
