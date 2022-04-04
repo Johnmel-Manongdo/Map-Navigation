@@ -13,6 +13,19 @@
         "type": "Point",
         "coordinates": [120.34226953983307, 16.046589343796313]
       }
+    },
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 102",
+        "LEVEL": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
     }
   ]
 }

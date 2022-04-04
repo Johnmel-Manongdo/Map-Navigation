@@ -638,7 +638,7 @@ var rooms = L.geoJson(null, {
     }
   },
 });
-$.getJSON("data/floorMapData/cmaFloor.js", function (data) {
+$.getJSON("data/floorMapData/room.geojson", function (data) {
   rooms.addData(data);
 });
 
