@@ -5,7 +5,8 @@ function getGeojsonPath() {
   //be
   if (start == "BE Building" && finish == "BE Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "BE Building")
   ) {
@@ -26,8 +27,10 @@ function getGeojsonPath() {
       }
       building_path.addData(data);
       building_path.openPopup();
+      building_path.removeData(data);
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "CHS Building") ||
     (start == "CHS Building" && finish == "BE Building")
   ) {
@@ -48,8 +51,10 @@ function getGeojsonPath() {
       }
       building_path.addData(data);
       building_path.openPopup();
+      building_path.removeData(data);
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "BE Building")
   ) {
@@ -71,7 +76,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "BE Building")
   ) {
@@ -93,7 +99,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "Forest Area") ||
     (start == "Forest Area" && finish == "BE Building")
   ) {
@@ -115,7 +122,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "BE Building")
   ) {
@@ -137,7 +145,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "UPang Gymnasium") ||
     (start == "UPang Gymnasium" && finish == "BE Building")
   ) {
@@ -159,7 +168,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "BE Building")
   ) {
@@ -181,7 +191,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "NH Building") ||
     (start == "NH Building" && finish == "BE Building")
   ) {
@@ -203,7 +214,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "BE Building")
   ) {
@@ -225,7 +237,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "BE Building" && finish == "Student Plaza") ||
     (start == "Student Plaza" && finish == "BE Building")
   ) {
@@ -250,9 +263,10 @@ function getGeojsonPath() {
   }
 
   //chs
-  else if (start == "CHS Building" && finish == "CHS Building") {
+  if (start == "CHS Building" && finish == "CHS Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "CHS Building")
   ) {
@@ -274,7 +288,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "CHS Building")
   ) {
@@ -296,7 +311,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "CHS Building")
   ) {
@@ -318,7 +334,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "Forest Area") ||
     (start == "Forest Area" && finish == "CHS Building")
   ) {
@@ -340,7 +357,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "CHS Building")
   ) {
@@ -362,7 +380,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "UPang Gymnasium") ||
     (start == "UPang Gymnasium" && finish == "CHS Building")
   ) {
@@ -384,7 +403,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "CHS Building")
   ) {
@@ -406,7 +426,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "NH Building") ||
     (start == "NH Building" && finish == "CHS Building")
   ) {
@@ -428,7 +449,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "CHS Building")
   ) {
@@ -450,7 +472,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CHS Building" && finish == "Student Plaza") ||
     (start == "Student Plaza" && finish == "CHS Building")
   ) {
@@ -475,9 +498,10 @@ function getGeojsonPath() {
   }
 
   //cma
-  else if (start == "CMA Building" && finish == "CMA Building") {
+  if (start == "CMA Building" && finish == "CMA Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "CMA Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "CMA Building")
   ) {
@@ -499,7 +523,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "CMA Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "CMA Building")
   ) {
@@ -524,12 +549,10 @@ function getGeojsonPath() {
   }
 
   //eb
-  else if (
-    start == "Engineering Building" &&
-    finish == "Engineering Building"
-  ) {
+  if (start == "Engineering Building" && finish == "Engineering Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "Engineering Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "Engineering Building")
   ) {
@@ -551,7 +574,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Engineering Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "Engineering Building")
   ) {
@@ -573,7 +597,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Engineering Building" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "Engineering Building")
   ) {
@@ -595,7 +620,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Engineering Building" && finish == "NH Building") ||
     (start == "NH Building" && finish == "Engineering Building")
   ) {
@@ -617,7 +643,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Engineering Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "Engineering Building")
   ) {
@@ -642,9 +669,10 @@ function getGeojsonPath() {
   }
 
   //fa
-  else if (start == "Forest Area" && finish == "Forest Area") {
+  if (start == "Forest Area" && finish == "Forest Area") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "Forest Area" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "Forest Area")
   ) {
@@ -666,7 +694,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Forest Area" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "Forest Area")
   ) {
@@ -688,7 +717,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Forest Area" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "Forest Area")
   ) {
@@ -710,7 +740,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Forest Area" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "Forest Area")
   ) {
@@ -732,7 +763,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Forest Area" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "Forest Area")
   ) {
@@ -754,7 +786,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Forest Area" && finish == "NH Building") ||
     (start == "NH Building" && finish == "Forest Area")
   ) {
@@ -776,7 +809,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Forest Area" && finish == "Store Area") ||
     (start == "Store Area" && finish == "Forest Area")
   ) {
@@ -801,9 +835,10 @@ function getGeojsonPath() {
   }
 
   //fc
-  else if (start == "Faculty Center" && finish == "Faculty Center") {
+  if (start == "Faculty Center" && finish == "Faculty Center") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "Faculty Center" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "Faculty Center")
   ) {
@@ -825,7 +860,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Faculty Center" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "Faculty Center")
   ) {
@@ -847,7 +883,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Faculty Center" && finish == "NH Building") ||
     (start == "NH Building" && finish == "Faculty Center")
   ) {
@@ -869,7 +906,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Faculty Center" && finish == "Store Area") ||
     (start == "Store Area" && finish == "Faculty Center")
   ) {
@@ -894,12 +932,13 @@ function getGeojsonPath() {
   }
 
   //administration
-  else if (
+  if (
     start == "Administration Building" &&
     finish == "Administration Building"
   ) {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "Administration Building")
   ) {
@@ -921,7 +960,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "BE Building") ||
     (start == "BE Building" && finish == "Administration Building")
   ) {
@@ -943,7 +983,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "CHS Building") ||
     (start == "CHS Building" && finish == "Administration Building")
   ) {
@@ -965,7 +1006,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "Administration Building")
   ) {
@@ -987,7 +1029,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "Administration Building")
   ) {
@@ -1009,7 +1052,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "Forest Area") ||
     (start == "Forest Area" && finish == "Administration Building")
   ) {
@@ -1031,7 +1075,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "Administration Building")
   ) {
@@ -1053,7 +1098,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "UPang Gymnasium") ||
     (start == "UPang Gymnasium" && finish == "Administration Building")
   ) {
@@ -1075,7 +1121,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "Administration Building")
   ) {
@@ -1097,7 +1144,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "NH Building") ||
     (start == "NH Building" && finish == "Administration Building")
   ) {
@@ -1119,7 +1167,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "Administration Building")
   ) {
@@ -1141,7 +1190,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Administration Building" && finish == "Student Plaza") ||
     (start == "Student Plaza" && finish == "Administration Building")
   ) {
@@ -1166,9 +1216,10 @@ function getGeojsonPath() {
   }
 
   //gym
-  else if (start == "UPang Gymnasium" && finish == "UPang Gymnasium") {
+  if (start == "UPang Gymnasium" && finish == "UPang Gymnasium") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "UPang Gymnasium")
   ) {
@@ -1190,7 +1241,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "UPang Gymnasium")
   ) {
@@ -1212,7 +1264,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "UPang Gymnasium")
   ) {
@@ -1234,7 +1287,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "Forest Area") ||
     (start == "Forest Area" && finish == "UPang Gymnasium")
   ) {
@@ -1256,7 +1310,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "UPang Gymnasium")
   ) {
@@ -1278,7 +1333,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "UPang Gymnasium")
   ) {
@@ -1300,7 +1356,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "NH Building") ||
     (start == "NH Building" && finish == "UPang Gymnasium")
   ) {
@@ -1322,7 +1379,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "Store Area") ||
     (start == "Store Area" && finish == "UPang Gymnasium")
   ) {
@@ -1344,7 +1402,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "UPang Gymnasium" && finish == "Student Plaza") ||
     (start == "Student Plaza" && finish == "UPang Gymnasium")
   ) {
@@ -1369,9 +1428,10 @@ function getGeojsonPath() {
   }
 
   //its
-  else if (start == "ITS Building" && finish == "ITS Building") {
+  if (start == "ITS Building" && finish == "ITS Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "ITS Building")
   ) {
@@ -1393,7 +1453,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "BE Building") ||
     (start == "BE Building" && finish == "ITS Building")
   ) {
@@ -1415,7 +1476,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "CHS Building") ||
     (start == "CHS Building" && finish == "ITS Building")
   ) {
@@ -1437,7 +1499,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "ITS Building")
   ) {
@@ -1459,7 +1522,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "ITS Building")
   ) {
@@ -1481,7 +1545,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "Forest Area") ||
     (start == "Forest Area" && finish == "ITS Building")
   ) {
@@ -1503,7 +1568,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "ITS Building")
   ) {
@@ -1525,7 +1591,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "Administration Building") ||
     (start == "Administration Building" && finish == "ITS Building")
   ) {
@@ -1547,7 +1614,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "UPang Gymnasium") ||
     (start == "UPang Gymnasium" && finish == "ITS Building")
   ) {
@@ -1569,7 +1637,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "ITS Building")
   ) {
@@ -1591,7 +1660,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "NH Building") ||
     (start == "NH Building" && finish == "ITS Building")
   ) {
@@ -1613,7 +1683,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "ITS Building")
   ) {
@@ -1635,7 +1706,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "ITS Building" && finish == "Student Plaza") ||
     (start == "Student Plaza" && finish == "ITS Building")
   ) {
@@ -1660,9 +1732,10 @@ function getGeojsonPath() {
   }
 
   //MBA
-  else if (start == "MBA Building" && finish == "MBA Building") {
+  if (start == "MBA Building" && finish == "MBA Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "MBA Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "MBA Building")
   ) {
@@ -1684,7 +1757,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "MBA Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "MBA Building")
   ) {
@@ -1706,7 +1780,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "MBA Building" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "MBA Building")
   ) {
@@ -1728,7 +1803,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "MBA Building" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "MBA Building")
   ) {
@@ -1750,7 +1826,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "MBA Building" && finish == "NH Building") ||
     (start == "NH Building" && finish == "MBA Building")
   ) {
@@ -1772,7 +1849,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "MBA Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "MBA Building")
   ) {
@@ -1797,9 +1875,10 @@ function getGeojsonPath() {
   }
 
   //NH
-  else if (start == "NH Building" && finish == "NH Building") {
+  if (start == "NH Building" && finish == "NH Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "NH Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "NH Building")
   ) {
@@ -1821,7 +1900,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "NH Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "NH Building")
   ) {
@@ -1843,7 +1923,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "NH Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "NH Building")
   ) {
@@ -1868,9 +1949,10 @@ function getGeojsonPath() {
   }
 
   //ptc
-  else if (start == "PTC Building" && finish == "PTC Building") {
+  if (start == "PTC Building" && finish == "PTC Building") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "AB Building") ||
     (start == "AB Building" && finish == "PTC Building")
   ) {
@@ -1892,7 +1974,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "BE Building") ||
     (start == "BE Building" && finish == "PTC Building")
   ) {
@@ -1914,7 +1997,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "CHS Building") ||
     (start == "CHS Building" && finish == "PTC Building")
   ) {
@@ -1936,7 +2020,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "PTC Building")
   ) {
@@ -1958,7 +2043,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "PTC Building")
   ) {
@@ -1980,7 +2066,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "Forest Area") ||
     (start == "Forest Area" && finish == "PTC Building")
   ) {
@@ -2002,7 +2089,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "PTC Building")
   ) {
@@ -2024,7 +2112,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "Administration Building") ||
     (start == "Administration Building" && finish == "PTC Building")
   ) {
@@ -2046,7 +2135,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "UPang Gymnasium") ||
     (start == "UPang Gymnasium" && finish == "PTC Building")
   ) {
@@ -2068,7 +2158,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "ITS Building") ||
     (start == "ITS Building" && finish == "PTC Building")
   ) {
@@ -2090,7 +2181,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "PTC Building")
   ) {
@@ -2112,7 +2204,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "NH Building") ||
     (start == "NH Building" && finish == "PTC Building")
   ) {
@@ -2134,7 +2227,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "Store Area") ||
     (start == "Store Area" && finish == "PTC Building")
   ) {
@@ -2156,7 +2250,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "PTC Building" && finish == "Student Plaza") ||
     (start == "Student Plaza" && finish == "PTC Building")
   ) {
@@ -2181,9 +2276,10 @@ function getGeojsonPath() {
   }
 
   //Sa
-  else if (start == "Store Area" && finish == "Store Area") {
+  if (start == "Store Area" && finish == "Store Area") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "Store Area" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "Store Area")
   ) {
@@ -2208,9 +2304,10 @@ function getGeojsonPath() {
   }
 
   //Sp
-  else if (start == "Student Plaza" && finish == "Student Plaza") {
+  if (start == "Student Plaza" && finish == "Student Plaza") {
     building_path.clearLayers();
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "Student Plaza")
   ) {
@@ -2232,7 +2329,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "CMA Building") ||
     (start == "CMA Building" && finish == "Student Plaza")
   ) {
@@ -2254,7 +2352,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "Engineering Building") ||
     (start == "Engineering Building" && finish == "Student Plaza")
   ) {
@@ -2276,7 +2375,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "Forest Area") ||
     (start == "Forest Area" && finish == "Student Plaza")
   ) {
@@ -2298,7 +2398,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "Faculty Center") ||
     (start == "Faculty Center" && finish == "Student Plaza")
   ) {
@@ -2320,7 +2421,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "MBA Building") ||
     (start == "MBA Building" && finish == "Student Plaza")
   ) {
@@ -2342,7 +2444,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "NH Building") ||
     (start == "NH Building" && finish == "Student Plaza")
   ) {
@@ -2364,7 +2467,8 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-  } else if (
+  }
+  if (
     (start == "Student Plaza" && finish == "Store Area") ||
     (start == "Store Area" && finish == "Student Plaza")
   ) {
