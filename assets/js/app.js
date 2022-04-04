@@ -293,7 +293,17 @@ $.getJSON("data/border.geojson", function (data) {
 });
 
 // building path
-var building_path = L.geoJson(null, {
+var building_path1 = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "black",
+      fill: false,
+      opacity: 1,
+      weight: 3,
+    };
+  },
+});
+var building_path2 = L.geoJson(null, {
   style: function (feature) {
     return {
       color: "black",
@@ -307,7 +317,6 @@ var building_path = L.geoJson(null, {
 $("#start-btn").click(function () {
   $("#navigateModal").modal("hide");
   getGeojsonPath();
-  building_path.clear
   reset();
   return false;
 });

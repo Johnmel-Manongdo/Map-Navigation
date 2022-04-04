@@ -4,29 +4,29 @@ function getGeojsonPath() {
 
   //be
   if (start == "BE Building" && finish == "BE Building") {
-    building_path.clearLayers();
+    building_path1.clearLayers();
   }
   if (
     (start == "BE Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) {
-        building_path.clearLayers();
+      if (map.hasLayer(building_path1)) {
+        building_path1.clearLayers();
       } else {
-        building_path
+        building_path1
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<i class='fas fa-thumbtack'></i><p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<i class='fas fa-thumbtack'></i><p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
-              "<i class='fas fa-thumbtack'></i><p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
+              "<p class='banner-left'><i class='fas fa-road'></i> <strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p class='banner-left'><i class='fas fa-walking'></i> <strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
+              "<p class='banner-left'><i class='fas fa-running'></i> <strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
               "</div>"
           );
         removePathBtn();
       }
-      building_path.addData(data);
-      building_path.openPopup();
+      building_path1.addData(data);
+      building_path1.openPopup();
     });
   }
   if (
@@ -34,10 +34,10 @@ function getGeojsonPath() {
     (start == "CHS Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-chs-path.geojson", function (data) {
-      if (map.hasLayer(building_path)) {
-        building_path.clearLayers();
+      if (map.hasLayer(building_path2)) {
+        building_path2.clearLayers();
       } else {
-        building_path
+        building_path2
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
@@ -48,8 +48,8 @@ function getGeojsonPath() {
           );
         removePathBtn();
       }
-      building_path.addData(data);
-      building_path.openPopup();
+      building_path2.addData(data);
+      building_path2.openPopup();
     });
   }
   if (
