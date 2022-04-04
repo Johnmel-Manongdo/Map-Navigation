@@ -14,6 +14,7 @@ function getGeojsonPath() {
       if (map.hasLayer(building_path)) {
         building_path.clearLayers();
       } else {
+        building_path.removeData(data);
         building_path
           .addTo(map)
           .bindPopup(
@@ -27,7 +28,6 @@ function getGeojsonPath() {
       }
       building_path.addData(data);
       building_path.openPopup();
-      building_path.removeData(data);
     });
   }
   if (
@@ -38,6 +38,7 @@ function getGeojsonPath() {
       if (map.hasLayer(building_path)) {
         building_path.clearLayers();
       } else {
+        building_path.removeData(data);
         building_path
           .addTo(map)
           .bindPopup(
@@ -51,7 +52,6 @@ function getGeojsonPath() {
       }
       building_path.addData(data);
       building_path.openPopup();
-      building_path.removeData(data);
     });
   }
   if (
