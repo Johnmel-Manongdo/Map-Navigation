@@ -18,9 +18,9 @@ function getGeojsonPath() {
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
+              "<i class='fas fa-thumbtack'></i><p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
+              "<i class='fas fa-thumbtack'></i><p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
+              "<i class='fas fa-thumbtack'></i><p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
               "</div>"
           );
         removePathBtn();
@@ -28,7 +28,6 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-    building_path.removeData(data);
   }
   if (
     (start == "BE Building" && finish == "CHS Building") ||
@@ -52,7 +51,6 @@ function getGeojsonPath() {
       building_path.addData(data);
       building_path.openPopup();
     });
-    building_path.removeData(data);
   }
   if (
     (start == "BE Building" && finish == "CMA Building") ||

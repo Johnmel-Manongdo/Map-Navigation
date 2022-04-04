@@ -307,6 +307,7 @@ var building_path = L.geoJson(null, {
 $("#start-btn").click(function () {
   $("#navigateModal").modal("hide");
   getGeojsonPath();
+  building_path.clear
   reset();
   return false;
 });
