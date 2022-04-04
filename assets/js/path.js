@@ -11,8 +11,9 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path1)) {
+      if (map.hasLayer(building_path1) || map.hasLayer(building_path2)) {
         building_path1.clearLayers();
+        building_path2.clearLayers();
       } else {
         building_path1
           .addTo(map)
@@ -34,7 +35,8 @@ function getGeojsonPath() {
     (start == "CHS Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-chs-path.geojson", function (data) {
-      if (map.hasLayer(building_path2)) {
+      if (map.hasLayer(building_path1) || map.hasLayer(building_path2)) {
+        building_path1.clearLayers();
         building_path2.clearLayers();
       } else {
         building_path2
