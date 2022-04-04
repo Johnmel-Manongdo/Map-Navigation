@@ -7,7 +7,8 @@
       "properties": {
         "BUILDING": "BE Building",
         "NAME": "BE 101",
-        "LEVEL": "1"
+        "LEVEL": "1",
+        "FLOOR": "assets/html/beBuildingFloor.html"
       },
       "geometry": {
         "type": "Point",
@@ -20,7 +21,8 @@
       "properties": {
         "BUILDING": "BE Building",
         "NAME": "BE 102",
-        "LEVEL": "1"
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
       },
       "geometry": {
         "type": "Point",

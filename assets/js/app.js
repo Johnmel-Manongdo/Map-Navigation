@@ -617,17 +617,14 @@ var rooms = L.geoJson(null, {
     if (feature.properties) {
       layer
         .bindPopup(
-          "<p>Building: " +
-            feature.properties.BUILDING +
-            "</p>" +
-            "<p>Room: " +
-            feature.properties.NAME +
-            "</p>" +
-            "<p>Floor: " +
-            feature.properties.LEVEL +
-            "</p>"
+          "<a href='#' data-toggle='collapse' data-target='.navbar-collapse.in' id='enter-room-btn'>Enter</a>"
         )
         .openPopup();
+      layer.on("popupopen", () => {
+        $("#enter-room-btn").click(function () {
+          window.location.href = feature.properties.FLOOR;
+        });
+      });
       roomSearch.push({
         name: layer.feature.properties.NAME,
         source: "Rooms",
