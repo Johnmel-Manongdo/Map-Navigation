@@ -2,6 +2,7 @@
 var map,
   featureList,
   buildingSearch = [],
+  parkSearch = [],
   foodSearch = [],
   parkingSearch = [],
   gateSearch = [],
@@ -161,6 +162,22 @@ function syncSidebar() {
       );
     }
   });
+  /* Loop through forest layer and add only features which are in the map bounds */
+  parks.eachLayer(function (layer) {
+    if (map.hasLayer(parkLayer)) {
+      $("#feature-list tbody").append(
+        '<tr class="feature-row" id="' +
+          L.stamp(layer) +
+          '" lat="' +
+          layer.getLatLng().lat +
+          '" lng="' +
+          layer.getLatLng().lng +
+          '"><td style="vertical-align: middle;"><img width="18" height="18" src="assets/img/park.png"></td><td class="feature-name">' +
+          layer.feature.properties.NAME +
+          '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>'
+      );
+    }
+  });
   /* Loop through parkings layer and add only features which are in the map bounds */
   parkings.eachLayer(function (layer) {
     if (map.hasLayer(parkingLayer)) {
@@ -220,7 +237,7 @@ function syncSidebar() {
           layer.getLatLng().lat +
           '" lng="' +
           layer.getLatLng().lng +
-          '"><td style="vertical-align: middle;"><img width="18" height="18" src="assets/img/gate.png"></td><td class="feature-name">' +
+          '"><td style="vertical-align: middle;"><img width="18" height="18" src="assets/img/open-door.png"></td><td class="feature-name">' +
           layer.feature.properties.NAME +
           '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>'
       );
@@ -406,6 +423,74 @@ $.getJSON("data/building.geojson", function (data) {
   map.addLayer(buildingLayer);
 });
 
+var parkLayer = L.geoJson(null);
+var parks = L.geoJson(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.icon({
+        iconUrl: "assets/img/park.png",
+        iconSize: [28, 28],
+        iconAnchor: [12, 28],
+        popupAnchor: [0, -25],
+      }),
+      title: feature.properties.NAME,
+      riseOnHover: true,
+    });
+  },
+  onEachFeature: function (feature, layer) {
+    if (feature.properties) {
+      layer
+        .bindPopup(
+          "<p><b><center>" +
+            feature.properties.NAME +
+            "</center></b></p>" +
+            "<center><img src='" +
+            feature.properties.PIC +
+            "' style='width:150px;height:100px;'></img></center> " +
+            "</br><a href='#' data-toggle='collapse' data-target='.navbar-collapse.in' id='description-btn'>" +
+            feature.properties.TEXT +
+            "</a>" +
+            "</br><a href='#' data-toggle='collapse' data-target='.navbar-collapse.in' id='enter-btn'>" +
+            feature.properties.ENTER +
+            "</a>"
+        )
+        .openPopup();
+      layer.on("popupopen", () => {
+        $("#description-btn").click(function () {
+          $("#description-title").html(feature.properties.NAME);
+          $("#description-pic").html(
+            "<div class='img-responsive'>'<center><img src='" +
+              feature.properties.PIC +
+              "' style='width:100%;height:auto;'></img></center></div>"
+          );
+          $("#description-text").html(feature.properties.DESC);
+          $("#description-poi-1").html(feature.properties.DESC_POI);
+          $("#descriptionModal").modal("show");
+          $(".navbar-collapse.in").collapse("hide");
+          return false;
+        });
+      });
+      layer.on("popupopen", () => {
+        $("#enter-btn").click(function () {
+          window.location.href = feature.properties.FLOOR;
+        });
+      });
+      parkSearch.push({
+        name: layer.feature.properties.NAME,
+        address: layer.feature.properties.ADDRESS1,
+        source: "Parks",
+        id: L.stamp(layer),
+        lat: layer.feature.geometry.coordinates[1],
+        lng: layer.feature.geometry.coordinates[0],
+      });
+    }
+  },
+});
+$.getJSON("data/forest.geojson", function (data) {
+  parks.addData(data);
+  map.addLayer(parkLayer);
+});
+
 /* Empty layer placeholder to add to layer control for listening when to add/remove parkings to markerClusters layer */
 var parkingLayer = L.geoJson(null);
 var parkings = L.geoJson(null, {
@@ -519,7 +604,7 @@ var rooms = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
     return L.marker(latlng, {
       icon: L.icon({
-        iconUrl: "assets/img/gate.png",
+        iconUrl: "assets/img/open-door.png",
         iconSize: [28, 28],
         iconAnchor: [12, 28],
         popupAnchor: [0, -25],
@@ -572,6 +657,10 @@ map.on("overlayadd", function (e) {
     markerClusters.addLayer(buildings);
     syncSidebar();
   }
+  if (e.layer === parkLayer) {
+    markerClusters.addLayer(parks);
+    syncSidebar();
+  }
   if (e.layer === parkingLayer) {
     markerClusters.addLayer(parkings);
     syncSidebar();
@@ -593,6 +682,10 @@ map.on("overlayadd", function (e) {
 map.on("overlayremove", function (e) {
   if (e.layer === buildingLayer) {
     markerClusters.removeLayer(buildings);
+    syncSidebar();
+  }
+  if (e.layer === parkLayer) {
+    markerClusters.removeLayer(parks);
     syncSidebar();
   }
   if (e.layer === parkingLayer) {
@@ -696,12 +789,13 @@ var groupedOverlays = {
   "Points of Interest": {
     // "<img src='assets/img/theater.png' width='24' height='28'>&nbsp;Buildings":
     "&nbspBuildings": buildingLayer,
+    "&nbspPark": parkLayer,
     // "<img src='assets/img/museum.png' width='24' height='28'>&nbsp;Parkings":
     "&nbspParkings": parkingLayer,
     // "<img src='assets/img/museum.png' width='24' height='28'>&nbsp;Foods":
     "&nbspFoods": foodLayer,
     "&nbspGates": gateLayer,
-    // "&nbspRooms": roomLayer,
+    "&nbspRooms": roomLayer,
   },
   References: {
     "&nbspCampus Border": borders,
@@ -743,6 +837,16 @@ $(document).one("ajaxStop", function () {
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     local: buildingSearch,
+    limit: 10,
+  });
+
+  var parksBH = new Bloodhound({
+    name: "Parks",
+    datumTokenizer: function (d) {
+      return Bloodhound.tokenizers.whitespace(d.name);
+    },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    local: parkSearch,
     limit: 10,
   });
 
@@ -830,6 +934,7 @@ $(document).one("ajaxStop", function () {
   });
   // bordersBH.initialize();
   buildingsBH.initialize();
+  parksBH.initialize();
   parkingsBH.initialize();
   foodsBH.initialize();
   gatesBH.initialize();
@@ -851,6 +956,18 @@ $(document).one("ajaxStop", function () {
         templates: {
           header:
             "<h4 class='typeahead-header'><img src='assets/img/campus.png' width='28' height='28'>&nbsp;Buildings</h4>",
+          suggestion: Handlebars.compile(
+            ["{{name}}<br>&nbsp;<small>{{address}}</small>"].join("")
+          ),
+        },
+      },
+      {
+        name: "Parks",
+        displayKey: "name",
+        source: parksBH.ttAdapter(),
+        templates: {
+          header:
+            "<h4 class='typeahead-header'><img src='assets/img/park.png' width='28' height='28'>&nbsp;Park</h4>",
           suggestion: Handlebars.compile(
             ["{{name}}<br>&nbsp;<small>{{address}}</small>"].join("")
           ),
@@ -898,7 +1015,7 @@ $(document).one("ajaxStop", function () {
         source: roomsBH.ttAdapter(),
         templates: {
           header:
-            "<h4 class='typeahead-header'><img src='assets/img/gate.png' width='28' height='28'>&nbsp;Rooms</h4>",
+            "<h4 class='typeahead-header'><img src='assets/img/open-door.png' width='28' height='28'>&nbsp;Rooms</h4>",
           suggestion: Handlebars.compile(
             ["{{name}}<br>&nbsp;<small>{{address}}</small>"].join("")
           ),
@@ -918,6 +1035,15 @@ $(document).one("ajaxStop", function () {
       if (datum.source === "Buildings") {
         if (!map.hasLayer(buildingLayer)) {
           map.addLayer(buildingLayer);
+        }
+        map.setView([datum.lat, datum.lng], 20);
+        if (map._layers[datum.id]) {
+          map._layers[datum.id].fire("click");
+        }
+      }
+      if (datum.source === "Parks") {
+        if (!map.hasLayer(parkLayer)) {
+          map.addLayer(parkLayer);
         }
         map.setView([datum.lat, datum.lng], 20);
         if (map._layers[datum.id]) {
