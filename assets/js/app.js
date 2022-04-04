@@ -1080,6 +1080,8 @@ $(document).one("ajaxStop", function () {
       if (datum.source === "Rooms") {
         if (!map.hasLayer(roomLayer)) {
           map.addLayer(roomLayer);
+        } else {
+          map.clearLayers(buildingLayer);
         }
         map.setView([datum.lat, datum.lng], 20);
         if (map._layers[datum.id]) {
