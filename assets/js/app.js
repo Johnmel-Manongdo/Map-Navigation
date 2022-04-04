@@ -638,7 +638,7 @@ var rooms = L.geoJson(null, {
     }
   },
 });
-$.getJSON("data/floorMapData/room.geojson", function (data) {
+$.getJSON("data/floorMapData/cmaFloor.js", function (data) {
   rooms.addData(data);
 });
 
@@ -1085,7 +1085,6 @@ $(document).one("ajaxStop", function () {
         if (map._layers[datum.id]) {
           map._layers[datum.id].fire("click");
         }
-        map.addLayer(roomLayer);
       }
       if (datum.source === "GeoNames") {
         map.setView([datum.lat, datum.lng], 14);

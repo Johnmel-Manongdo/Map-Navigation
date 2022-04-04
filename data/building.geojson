@@ -251,24 +251,6 @@
         "type": "Point",
         "coordinates": [120.34135490655898, 16.047290477715258]
       }
-    },
-
-    {
-      "type": "Feature",
-      "id": 14,
-      "properties": {
-        "NAME": "Forest Area",
-        "PIC": "assets/img/building_image/forest.jpg",
-        "TEXT": "Description",
-        "DESC": "This is where students relax and hang out with their friends.",
-        "DESC_POI": "Field",
-        "ENTER": "Enter",
-        "FLOOR": "floor.html"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [120.34147292375563, 16.047053329754167]
-      }
     }
   ]
 }
