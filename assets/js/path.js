@@ -4,30 +4,29 @@ function getGeojsonPath() {
 
   //be
   if (start == "BE Building" && finish == "BE Building") {
-    building_path1.clearLayers();
+    building_path.clearLayers();
   }
   if (
     (start == "BE Building" && finish == "Automotive Building") ||
     (start == "Automotive Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path1) || map.hasLayer(building_path2)) {
-        building_path1.clearLayers();
-        building_path2.clearLayers();
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
       } else {
-        building_path1
-          .addTo(map)
-          .bindPopup(
-            "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
-              "</div>"
-          );
+        building_path.addTo(map);
         removePathBtn();
       }
-      building_path1.addData(data);
-      building_path1.openPopup();
+      building_path
+        .addData(data)
+        .bindPopup(
+          "<div style='width: 15rem'>" +
+            "<p class='banner-left'><strong>Distance: </strong><br />128.24 meters</p>" +
+            "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
+            "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
+            "</div>"
+        )
+        .openPopup();
     });
   }
   if (
@@ -35,23 +34,22 @@ function getGeojsonPath() {
     (start == "CHS Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-chs-path.geojson", function (data) {
-      if (map.hasLayer(building_path1) || map.hasLayer(building_path2)) {
-        building_path1.clearLayers();
-        building_path2.clearLayers();
+      if (map.hasLayer(building_path)) {
+        building_path.clearLayers();
       } else {
-        building_path2
-          .addTo(map)
-          .bindPopup(
-            "<div style='width: 15rem'>" +
-              "<p class='banner-left'><strong>Distance: </strong><br />23.65 meters</p>" +
-              "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />0 minute & 15 seconds</p>" +
-              "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 8 seconds</p>" +
-              "</div>"
-          );
+        building_path.addTo(map);
         removePathBtn();
       }
-      building_path2.addData(data);
-      building_path2.openPopup();
+      building_path
+        .addData(data)
+        .bindPopup(
+          "<div style='width: 15rem'>" +
+            "<p class='banner-left'><strong>Distance: </strong><br />23.65 meters</p>" +
+            "<p class='banner-left'><strong>Ave. Walking Time: </strong><br />0 minute & 15 seconds</p>" +
+            "<p class='banner-left'><strong>Ave. Running Time: </strong><br />0 minute & 8 seconds</p>" +
+            "</div>"
+        )
+        .openPopup();
     });
   }
   if (

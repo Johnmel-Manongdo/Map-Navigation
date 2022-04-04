@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet"
@@ -480,10 +480,10 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                    $i = 0;
-                    while ($rows = mysqli_fetch_assoc($result)) {
-                      $i++;
-                    ?>
+                                        $i = 0;
+                                        while ($rows = mysqli_fetch_assoc($result)) {
+                                            $i++;
+                                        ?>
                                     <tr class="d-flex">
                                         <th scope="row"><?= $i ?></th>
                                         <td style="text-transform: capitalize"><?= $rows['eventName']; ?></td>
@@ -541,14 +541,14 @@
                         <div class="form-group">
                             <label for="problemTitle">Title</label>
                             <input class="form-control" value="<?php if (isset($_GET['problemTitle']))
-                                                    echo ($_GET['problemTitle']); ?>" id="inputEventName" type="text"
-                                name="problemTitle" placeholder="Title" required />
+                                                                    echo ($_GET['problemTitle']); ?>"
+                                id="inputEventName" type="text" name="problemTitle" placeholder="Title" required />
                         </div>
                         <div class="form-group">
                             <label for="problemType">Category</label>
                             <select class="form-control" value="<?php if (isset($_GET['problemType']))
-                                                    echo ($_GET['problemType']); ?>" id="exampleSelect1"
-                                name="problemType" required>
+                                                                    echo ($_GET['problemType']); ?>"
+                                id="exampleSelect1" name="problemType" required>
                                 <option selected hidden value="">Select Category</option>
                                 <option value="Bugs">Bugs</option>
                                 <option value="Inaccuracy">Inaccuracy</option>
@@ -559,9 +559,9 @@
                         <div class="form-group">
                             <label for="problemDesc">Description</label>
                             <textarea class="form-control" value="<?php if (isset($_GET['problemDesc']))
-                                                      echo ($_GET['problemDesc']); ?>" name="problemDesc"
-                                placeholder="Write a short description of your report..." rows="10" cols="100"
-                                required></textarea>
+                                                                        echo ($_GET['problemDesc']); ?>"
+                                name="problemDesc" placeholder="Write a short description of your report..." rows="10"
+                                cols="100" required></textarea>
                         </div>
                         <div class="form-group">
                             <input class="form-control" id="problemStatus" value="Pending" name="problemStatus"
@@ -667,9 +667,9 @@
                         <div class="form-group">
                             <label for="feedbackText">Feedback</label>
                             <textarea class="form-control" value="<?php if (isset($_GET['feedbackText']))
-                                                      echo ($_GET['feedbackText']); ?>" name="feedbackText"
-                                placeholder="Write your feedback here..." rows="5" cols="10" style="resize: vertical;"
-                                required></textarea>
+                                                                        echo ($_GET['feedbackText']); ?>"
+                                name="feedbackText" placeholder="Write your feedback here..." rows="5" cols="10"
+                                style="resize: vertical;" required></textarea>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-dismiss="modal"
@@ -750,6 +750,8 @@
     <script src="assets/js/path.js"></script>
 
 </body>
+
+</html>
 
 </html>
 
