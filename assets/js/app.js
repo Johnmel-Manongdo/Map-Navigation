@@ -332,7 +332,8 @@ function removePathBtn() {
   var pathDetailsDiv = L.easyButton(
     "<i class='fas fa-trash'></i>",
     function () {
-      building_path.clearLayers();
+      building_path1.clearLayers();
+      building_path2.clearLayers();
     },
     "Clear Path",
     "removeBtn"

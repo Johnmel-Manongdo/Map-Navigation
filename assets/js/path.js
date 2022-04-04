@@ -13,14 +13,15 @@ function getGeojsonPath() {
     $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
       if (map.hasLayer(building_path1)) {
         building_path1.clearLayers();
+        building_path2.clearLayers();
       } else {
         building_path1
           .addTo(map)
           .bindPopup(
             "<div style='width: 15rem'>" +
-              "<p class='banner-left'><i class='fas fa-road'></i> <strong>Distance: </strong><br />128.24 meters</p>" +
-              "<p class='banner-left'><i class='fas fa-walking'></i> <strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
-              "<p class='banner-left'><i class='fas fa-running'></i> <strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
+              "<p class='banner-left'><i class='fas fa-road' style='margin-right: 3px;'></i> <strong>Distance: </strong><br />128.24 meters</p>" +
+              "<p class='banner-left'><i class='fas fa-walking' style='margin-right: 3px;'></i> <strong>Ave. Walking Time: </strong><br />1 minute & 22 seconds</p>" +
+              "<p class='banner-left'><i class='fas fa-running' style='margin-right: 3px;'></i> <strong>Ave. Running Time: </strong><br />0 minute & 41 seconds</p>" +
               "</div>"
           );
         removePathBtn();
