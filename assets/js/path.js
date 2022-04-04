@@ -11,7 +11,7 @@ function getGeojsonPath() {
     (start == "Automotive Building" && finish == "BE Building")
   ) {
     $.getJSON("data/pathData/be/be-ab-path.geojson", function (data) {
-      if (map.hasLayer(building_path1)) {
+      if (map.hasLayer(building_path1, building_path2)) {
         building_path1.clearLayers();
         building_path2.clearLayers();
       } else {
