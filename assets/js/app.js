@@ -795,7 +795,7 @@ var groupedOverlays = {
     // "<img src='assets/img/museum.png' width='24' height='28'>&nbsp;Foods":
     "&nbspFoods": foodLayer,
     "&nbspGates": gateLayer,
-    "&nbspRooms": roomLayer,
+    // "&nbspRooms": roomLayer,
   },
   References: {
     "&nbspCampus Border": borders,
@@ -1080,13 +1080,12 @@ $(document).one("ajaxStop", function () {
       if (datum.source === "Rooms") {
         if (!map.hasLayer(roomLayer)) {
           map.addLayer(roomLayer);
-        } else {
-          map.clearLayers(buildingLayer);
         }
         map.setView([datum.lat, datum.lng], 20);
         if (map._layers[datum.id]) {
           map._layers[datum.id].fire("click");
         }
+        map.addLayer(roomLayer);
       }
       if (datum.source === "GeoNames") {
         map.setView([datum.lat, datum.lng], 14);
