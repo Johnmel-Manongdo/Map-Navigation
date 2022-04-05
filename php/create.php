@@ -25,7 +25,7 @@ if (isset($_POST['sendFeedbackBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_feedbacks(feedbackDate, feedbackTime, feedbackEmoji, feedbackRating, feedbackText) 
-               VALUES(NOW(), NOW(), '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
+               VALUES(UTC_TIMESTAMP(), UTC_TIMESTAMP(), '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Thank you for your feedback!");
@@ -61,7 +61,7 @@ if (isset($_POST['sendReportBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_problems(problemTitle, problemDate, problemTime, problemType, problemDesc, problemStatus) 
-               VALUES('$problemTitle', NOW(), NOW(), '$problemType', '$problemDesc', '$problemStatus')";
+               VALUES('$problemTitle', UTC_TIMESTAMP(), UTC_TIMESTAMP(), '$problemType', '$problemDesc', '$problemStatus')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Successfully send report!");
