@@ -17,7 +17,7 @@
     },
     {
       "type": "Feature",
-      "id": 0,
+      "id": 1,
       "properties": {
         "BUILDING": "BE Building",
         "NAME": "BE 102",
@@ -27,6 +27,2738 @@
       "geometry": {
         "type": "Point",
         "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 103",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 104",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 105",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 106",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 107",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 201",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/beBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 202",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 203",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 204",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 205",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 206",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 207",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 208",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "Office of the CHS/JHS Director",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/beBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE Library",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 303",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 304",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 305",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 306",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 307",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 308",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 401",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/beBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 402",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 403",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 404",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 405",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 406",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 407",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "properties": {
+        "BUILDING": "BE Building",
+        "NAME": "BE 408",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34226953983307, 16.046589343796313]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "properties": {
+        "BUILDING": "CHS Building",
+        "NAME": "CHS Female CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/chsBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34206569194794, 16.046504279586813]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "properties": {
+        "BUILDING": "CHS Building",
+        "NAME": "CHS Male CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/chsBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34206569194794, 16.046504279586813]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "properties": {
+        "BUILDING": "CHS Building",
+        "NAME": "Mock Hospital",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/chsBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34206569194794, 16.046504279586813]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "properties": {
+        "BUILDING": "CHS Building",
+        "NAME": "CHS Office",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/chsBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34206569194794, 16.046504279586813]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "properties": {
+        "BUILDING": "CHS Building",
+        "NAME": "Culinary Arts Laboratory",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/chsBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34206569194794, 16.046504279586813]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "properties": {
+        "BUILDING": "CHS Building",
+        "NAME": "Amphitheater",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/chsBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34206569194794, 16.046504279586813]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "GSD Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "Security Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "Travel Tour Simulation Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "Medical and Dental Clinic",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "Printing Room",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "NROTC Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "Gym Female CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "properties": {
+        "BUILDING": "UPang Gymnasium",
+        "NAME": "Gym Male CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/gymBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34174382686615, 16.046365083529277]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "MBA 200",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "Engineering Laboratory",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "FC Male CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "FC Female CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "Engineering Laboratory",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "Crime Laboratory",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "MBA 202",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "MBA 203",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "CMA Office",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "CSS Office",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "Media and Learning Resource Room",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "properties": {
+        "BUILDING": "Faculty Center",
+        "NAME": "CAS Office",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/fcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34145683050156, 16.0462129988367]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "properties": {
+        "BUILDING": "Engineering Building",
+        "NAME": "Guard House",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/ebBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34137904644012, 16.046473347137994]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "properties": {
+        "BUILDING": "Engineering Building",
+        "NAME": "CEA Office",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/ebBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34137904644012, 16.046473347137994]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "properties": {
+        "BUILDING": "Engineering Building",
+        "NAME": "MBA 204",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ebBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34137904644012, 16.046473347137994]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "McDonald's",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "UPang Faculty Union Office",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "Mac Lab",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC Male CR",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC Female CR",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "College of Law Moot Court",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 302",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 303",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 304",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 305",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 306",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "CITE Office",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "College of Law Office",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "College of Law Library",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 403",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 404",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "properties": {
+        "BUILDING": "PTC Building",
+        "NAME": "PTC 405",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/ptcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34246534109116, 16.047164170684162]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "properties": {
+        "BUILDING": "ITS Building",
+        "NAME": "CSDL Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/itcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34233391284943, 16.047027552784865]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "properties": {
+        "BUILDING": "ITS Building",
+        "NAME": "ITS 200",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/itcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34233391284943, 16.047027552784865]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "properties": {
+        "BUILDING": "ITS Building",
+        "NAME": "ITS 201",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/itcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34233391284943, 16.047027552784865]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "properties": {
+        "BUILDING": "ITS Building",
+        "NAME": "ITS Office",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/itcBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34233391284943, 16.047027552784865]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 81,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "University Research Committee Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 82,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "Office of the Registrar",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 83,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "Marketing Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 84,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "FVR Museum",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 85,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "Research Director's Office",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 86,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "Office of the Finance",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 87,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "Office of the President",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 88,
+      "properties": {
+        "BUILDING": "Administration Building",
+        "NAME": "University Library",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/fvrBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34204959869385, 16.046978576533984]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 89,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "Office of Graduate Studies",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 90,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 105",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 91,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 106",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 107",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 108",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 109",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 95,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "Human Resource Department",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 205",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 97,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 206",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 98,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 207",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 99,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 208",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 100,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 209",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 101,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA Female CR",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 102,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "University Chapel",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 103,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 307",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 104,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 308",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 105,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 309",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 106,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 310",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 107,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 311",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 108,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA Male CR",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 109,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "Employee Lounge",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 110,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 405",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 111,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 406",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 112,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 407",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 113,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 408",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 114,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 409",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 115,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA Female CR",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 116,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "Audio Visual Room",
+        "LEVEL": "5",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 117,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "Science Laboratory",
+        "LEVEL": "5",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 118,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 506",
+        "LEVEL": "5",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 119,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 507",
+        "LEVEL": "5",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 120,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 508",
+        "LEVEL": "5",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 121,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA 509",
+        "LEVEL": "5",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 122,
+      "properties": {
+        "BUILDING": "MBA Building",
+        "NAME": "MBA Male CR",
+        "LEVEL": "5",
+        "FLOOR": "assets/html/mbaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34122079610825, 16.04679298221089]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 123,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH Male CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 124,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH Female CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 125,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 114",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 115",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 127,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 116",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 128,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 117",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 129,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 118",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 130,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 119",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 131,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 120",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 132,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 214",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 133,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 215",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 134,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 216",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 135,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 217",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 136,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 218",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 137,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 219",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 138,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 220",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 139,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 221",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 140,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 314",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 141,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 315",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 142,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 316",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 143,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 317",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 144,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 318",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 145,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 319",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 146,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 320",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 147,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 321",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 148,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 414",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 149,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 415",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 150,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 416",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 151,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 417",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 152,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 418",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 153,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 419",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 154,
+      "properties": {
+        "BUILDING": "NH Building",
+        "NAME": "NH 420",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/nhBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34135490655898, 16.047290477715258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 155,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA Female CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 156,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA Male CR",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 101",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 158,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 102",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 159,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 103",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 160,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 104",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 161,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 105",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 162,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 205",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 163,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 206",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 164,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 207",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 165,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 208",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 166,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 209",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 167,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 210",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 168,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 211",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 169,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 212",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 170,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 213",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 171,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 214",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "id": 172,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 305",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 306",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 174,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 307",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 175,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 308",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 176,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 309",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 177,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 310",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 178,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 311",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 179,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 312",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 180,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 313",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 181,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 314",
+        "LEVEL": "3",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "id": 182,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 405",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 183,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 406",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 184,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 407",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 185,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 408",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 186,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 409",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 187,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 410",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 188,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 411",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 189,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 412",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 190,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 413",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 191,
+      "properties": {
+        "BUILDING": "CMA Building",
+        "NAME": "CMA 414",
+        "LEVEL": "4",
+        "FLOOR": "assets/html/cmaBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34192353487016, 16.047360075432874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 192,
+      "properties": {
+        "BUILDING": "Store Area",
+        "NAME": "University Store",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/saBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34205496311188, 16.04717448146522]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 193,
+      "properties": {
+        "BUILDING": "Store Area",
+        "NAME": "Store A",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/saBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34205496311188, 16.04717448146522]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 194,
+      "properties": {
+        "BUILDING": "Store Area",
+        "NAME": "Store B",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/saBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34205496311188, 16.04717448146522]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 195,
+      "properties": {
+        "BUILDING": "Store Area",
+        "NAME": "Printing Area",
+        "LEVEL": "1",
+        "FLOOR": "assets/html/saBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34205496311188, 16.04717448146522]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 196,
+      "properties": {
+        "BUILDING": "Store Area",
+        "NAME": "Arts and Media",
+        "LEVEL": "2",
+        "FLOOR": "assets/html/saBuildingFloor.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.34205496311188, 16.04717448146522]
       }
     }
   ]

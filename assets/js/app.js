@@ -617,7 +617,7 @@ var rooms = L.geoJson(null, {
     if (feature.properties) {
       layer
         .bindPopup(
-          "<a href='#' data-toggle='collapse' data-target='.navbar-collapse.in' id='enter-room-btn'>Enter</a>"
+          "<a href='#' class='btn btn-success' data-toggle='collapse' data-target='.navbar-collapse.in' id='enter-room-btn'>Enter</a>"
         )
         .openPopup();
       layer.on("popupopen", () => {
