@@ -10,7 +10,7 @@ if (isset($_POST['sendFeedbackBtn'])) {
         return $data;
     }
 
-    $time = date_default_timezone_set(getenv('Asia/Manila'));
+    date_default_timezone_set('Asia/Manila');
     $feedbackEmoji = validate($_POST['feedbackEmoji']);
     $feedbackRating = validate($_POST['feedbackRating']);
     $feedbackText = validate($_POST['feedbackText']);
@@ -26,7 +26,7 @@ if (isset($_POST['sendFeedbackBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_feedbacks(feedbackDate, feedbackTime, feedbackEmoji, feedbackRating, feedbackText) 
-               VALUES('$time', '$time', '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
+               VALUES(NOW(), NOW(), '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Thank you for your feedback!");
@@ -46,7 +46,7 @@ if (isset($_POST['sendReportBtn'])) {
         return $data;
     }
 
-    $time = date_default_timezone_set(getenv('Asia/Manila'));
+    date_default_timezone_set('Asia/Manila');
     $problemTitle = validate($_POST['problemTitle']);
     $problemType = validate($_POST['problemType']);
     $problemDesc = validate($_POST['problemDesc']);
@@ -63,7 +63,7 @@ if (isset($_POST['sendReportBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_problems(problemTitle, problemDate, problemTime, problemType, problemDesc, problemStatus) 
-               VALUES('$problemTitle', '$time', '$time', '$problemType', '$problemDesc', '$problemStatus')";
+               VALUES('$problemTitle', NOW(), NOW(), '$problemType', '$problemDesc', '$problemStatus')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Successfully send report!");
