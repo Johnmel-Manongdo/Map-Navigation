@@ -25,7 +25,7 @@ if (isset($_POST['sendFeedbackBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_feedbacks(feedbackDate, feedbackTime, feedbackEmoji, feedbackRating, feedbackText) 
-               VALUES(CONVERT_TZ(NOW(), 'UTC', 'Asia/Manila'), CONVERT_TZ(NOW(), 'UTC', 'Asia/Manila'), '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
+               VALUES(NOW(), NOW(), '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Thank you for your feedback!");
