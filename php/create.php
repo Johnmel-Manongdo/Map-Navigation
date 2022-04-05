@@ -10,7 +10,7 @@ if (isset($_POST['sendFeedbackBtn'])) {
         return $data;
     }
 
-    $time = date_default_timezone_set('Asia/Manila');
+    $time = date_default_timezone_set(getenv('Asia/Manila'));
     $feedbackEmoji = validate($_POST['feedbackEmoji']);
     $feedbackRating = validate($_POST['feedbackRating']);
     $feedbackText = validate($_POST['feedbackText']);
@@ -46,6 +46,7 @@ if (isset($_POST['sendReportBtn'])) {
         return $data;
     }
 
+    $time = date_default_timezone_set(getenv('Asia/Manila'));
     $problemTitle = validate($_POST['problemTitle']);
     $problemType = validate($_POST['problemType']);
     $problemDesc = validate($_POST['problemDesc']);
