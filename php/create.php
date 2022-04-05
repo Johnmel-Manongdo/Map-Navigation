@@ -61,7 +61,7 @@ if (isset($_POST['sendReportBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_problems(problemTitle, problemDate, problemTime, problemType, problemDesc, problemStatus) 
-               VALUES('$problemTitle', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP(), '$problemType', '$problemDesc', '$problemStatus')";
+               VALUES('$problemTitle', NOW(), NOW(), '$problemType', '$problemDesc', '$problemStatus')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Successfully send report!");
