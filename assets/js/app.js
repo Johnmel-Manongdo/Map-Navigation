@@ -337,7 +337,7 @@ function reset() {
 
 function removePathBtn() {
   var pathDetailsDiv = L.easyButton(
-    "<i class='fas fa-trash'></i>",
+    "<i class='fa fa-trash'></i>",
     function () {
       building_path.clearLayers();
     },
@@ -732,7 +732,7 @@ var locateControl = L.control
       weight: 1,
       clickable: false,
     },
-    icon: "fas fa-map-marker-alt",
+    icon: "fa fa-map-marker",
     metric: false,
     strings: {
       title: "My location",
@@ -751,7 +751,7 @@ var locateControl = L.control
 
 // locate campus
 var mainCampusBtn = L.easyButton(
-  "<i class='fas fa-thumbtack'></i>",
+  "<i class='fa fa-thumbtack'></i>",
   function () {
     map.setView([16.046967909993068, 120.34169210507243], 19);
   },
