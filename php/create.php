@@ -10,9 +10,11 @@ if (isset($_POST['sendFeedbackBtn'])) {
         return $data;
     }
 
+    date_default_timezone_set('Asia/Manila');
     $feedbackEmoji = validate($_POST['feedbackEmoji']);
     $feedbackRating = validate($_POST['feedbackRating']);
     $feedbackText = validate($_POST['feedbackText']);
+    $date = date('Y-m-d H:i:s');
 
     $feedbackData = '&feedbackEmoji=' . $feedbackEmoji . '&feedbackRating=' . $feedbackRating . '&feedbackText=' . $feedbackText;
 
@@ -25,7 +27,7 @@ if (isset($_POST['sendFeedbackBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_feedbacks(feedbackDate, feedbackTime, feedbackEmoji, feedbackRating, feedbackText) 
-               VALUES(CONVERT_TZ(NOW(), 'UTC', 'Asia/Philippines'), CONVERT_TZ(NOW(), 'UTC', 'Asia/Philippines'), '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
+               VALUES('$date', '$date', '$feedbackEmoji', '$feedbackRating', '$feedbackText')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Thank you for your feedback!");
@@ -45,10 +47,12 @@ if (isset($_POST['sendReportBtn'])) {
         return $data;
     }
 
+    date_default_timezone_set('Asia/Manila');
     $problemTitle = validate($_POST['problemTitle']);
     $problemType = validate($_POST['problemType']);
     $problemDesc = validate($_POST['problemDesc']);
     $problemStatus = 'Pending';
+    $date = date('Y-m-d H:i:s');
 
     $problemData = '&problemTitle=' . $problemTitle . '&problemType=' . $problemType . '&problemDesc=' . $problemDesc;
 
@@ -61,7 +65,7 @@ if (isset($_POST['sendReportBtn'])) {
     } else {
 
         $sql = "INSERT INTO tbl_problems(problemTitle, problemDate, problemTime, problemType, problemDesc, problemStatus) 
-               VALUES('$problemTitle', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP(), '$problemType', '$problemDesc', '$problemStatus')";
+               VALUES('$problemTitle', '$date', ' $date', '$problemType', '$problemDesc', '$problemStatus')";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../index.php?success=Successfully send report!");
