@@ -188,7 +188,7 @@
         "NAME": "Store Area",
         "PIC": "assets/img/building_image/sa_building.jpg",
         "TEXT": "Description",
-        "DESC": "Description here.......",
+        "DESC": "This area offers different kinds of services, from selling school supplies, printing or xerox services, and many more.",
         "DESC_POI": "Xerox Area, School Supplies Store",
         "ENTER": "Enter Building",
         "FLOOR": "assets/html/saBuildingFloor.html"
