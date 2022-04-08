@@ -751,7 +751,7 @@ var locateControl = L.control
 
 // locate campus
 var mainCampusBtn = L.easyButton(
-  "<i class='fa fa-thumbtack'></i>",
+  "<i class='fa fa-thumb-tack'></i>",
   function () {
     map.setView([16.046967909993068, 120.34169210507243], 19);
   },
