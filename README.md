@@ -11,3 +11,14 @@ A web-based navigation map for PHINMA UPang Campus.
 - Building Floor Map
 - Event Viewer
 - Feedback and Report
+
+## Screenshots
+
+![](screenshots/map_nav.png)
+![](screenshots/map_nav2.png)
+![](screenshots/map_nav3.png)
+![](screenshots/map_nav4.png)
+![](screenshots/map_nav5.png)
+![](screenshots/map_nav6.png)
+![](screenshots/map_nav7.png)
+![](screenshots/map_nav8.png)
