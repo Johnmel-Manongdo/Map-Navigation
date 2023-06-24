@@ -12,6 +12,10 @@ A web-based navigation map for PHINMA UPang Campus.
 - Event Viewer
 - Feedback and Report
 
+## Link
+
+https://phinma-upang-map.herokuapp.com/
+
 ## Screenshots
 
 ![](screenshots/map_nav.png)
